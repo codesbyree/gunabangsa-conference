@@ -1,0 +1,117 @@
+---
+import { ArrowRightIcon, CalendarIcon, FileTextIcon } from "lucide-react";
+import Layout from "../layouts/Layout.astro";
+import PageHeroSection from "../components/reusables/page-hero-section";
+
+const schedule = [
+  {
+    time: "08:00 - 09:00",
+    activity: "Registration & Morning Refreshments",
+    type: "General",
+  },
+  {
+    time: "09:00 - 09:30",
+    activity: "Inaugural Ceremony & Opening Address",
+    type: "Ceremony",
+  },
+  {
+    time: "09:30 - 10:30",
+    activity: "Keynote: AI in Modern Clinical Decision Making",
+    type: "Keynote",
+  },
+  {
+    time: "10:30 - 11:00",
+    activity: "Networking Coffee Break & Poster Session",
+    type: "Networking",
+  },
+  {
+    time: "11:00 - 13:00",
+    activity: "Parallel Track A: Biomedical Engineering Advancements",
+    type: "Scientific",
+  },
+  { time: "13:00 - 14:00", activity: "Networking Lunch", type: "General" },
+  {
+    time: "14:00 - 16:00",
+    activity: "Parallel Track B: Pharmaceutical Innovation & Clinical Trials",
+    type: "Scientific",
+  },
+  {
+    time: "16:00 - 16:30",
+    activity: "Afternoon Tea & Innovation Showcases",
+    type: "Networking",
+  },
+  {
+    time: "16:30 - 18:00",
+    activity: "Panel Discussion: The Future of Global Health Ethics",
+    type: "Scientific",
+  },
+];
+---
+
+<Layout>
+  <PageHeroSection title="Program" />
+
+  <section class="max-w-5xl mx-auto px-6 py-24">
+    <div class="bg-white border border-slate-100 rounded-3xl overflow-hidden shadow-sm">
+      <div class="bg-[#062C1B] p-6 text-white flex justify-between items-center">
+        <div class="font-bold flex items-center gap-2">
+          <CalendarIcon className="w-5 h-5 text-emerald-400" />
+          Day 01 — November 24, 2026
+        </div>
+        <div class="text-xs font-black uppercase tracking-widest text-emerald-400/60">Main Auditorium</div>
+      </div>
+
+      <div class="divide-y divide-slate-50">
+        {
+          schedule.map((item, i) => (
+            <div class="group flex flex-col md:flex-row md:items-center p-8 hover:bg-emerald-50/30 transition-colors">
+              <div class="w-40 shrink-0 mb-2 md:mb-0">
+                <span class="text-sm font-bold text-emerald-600 font-mono tracking-tighter">{item.time}</span>
+              </div>
+              <div class="flex-1">
+                <h4 class="text-lg font-extrabold text-[#062C1B] leading-tight group-hover:text-emerald-800 transition-colors">
+                  {item.activity}
+                </h4>
+                <div class="mt-2 flex items-center gap-2">
+                  <span
+                    class={`text-[10px] font-black uppercase tracking-widest px-2 py-0.5 rounded ${
+                      item.type === "Keynote"
+                        ? "bg-emerald-500 text-emerald-950"
+                        : item.type === "Scientific"
+                          ? "bg-slate-900 text-white"
+                          : "bg-slate-100 text-slate-500"
+                    }`}
+                  >
+                    {item.type}
+                  </span>
+                </div>
+              </div>
+              <div class="mt-4 md:mt-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                <ArrowRightIcon className="w-5 h-5 text-emerald-500" />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <div
+      class="mt-12 p-8 bg-slate-50 border border-slate-100 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6"
+    >
+      <div class="flex items-start gap-4">
+        <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm text-emerald-600">
+          <FileTextIcon className="w-6 h-6" />
+        </div>
+        <div>
+          <h4 class="font-bold text-[#062C1B]">Looking for the detailed Abstract eBook?</h4>
+          <p class="text-sm text-slate-500 font-medium">Download the full program schedule in PDF format.</p>
+        </div>
+      </div>
+      <button
+        class="bg-[#062C1B] text-white px-8 py-3 rounded-lg font-black text-xs uppercase tracking-widest hover:bg-emerald-600 transition active:scale-95"
+      >
+        Download PDF Program
+      </button>
+    </div>
+  </section>
+</Layout>
