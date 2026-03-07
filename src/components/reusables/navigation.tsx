@@ -21,21 +21,21 @@ export default function Navigation() {
             href="/"
             className={`hover:text-emerald-400 transition uppercase tracking-widest`}
           >
-            Home
-          </a>
-
-          <a
-            href="/program"
-            className={`hover:text-emerald-400 transition uppercase tracking-widest`}
-          >
-            PROGRAM
+            HOME
           </a>
 
           <a
             href="/venue"
             className={`hover:text-emerald-400 transition uppercase tracking-widest`}
           >
-            Venue
+            VENUE
+          </a>
+
+          <a
+            href="/committee"
+            className={`hover:text-emerald-400 transition uppercase tracking-widest`}
+          >
+            COMMITTEE
           </a>
         </div>
 

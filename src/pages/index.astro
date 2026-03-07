@@ -1,38 +1,52 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HomeHeroSection from "../components/homepage/home-hero-section.astro";
-import HomeScopeSection from "../components/homepage/home-scope-section";
-import HomeAboutSection from "../components/homepage/home-about-section.astro";
-import HomeSpeakersSection from "../components/homepage/home-speakers-section.astro";
-import HomeDeadlinesSection from "../components/homepage/home-deadlines-section.astro";
-import HomePricingSection from "../components/homepage/home-pricing-section";
+import Navigation from "../components/shared/Navigation";
+import Footer from "../components/shared/Footer.astro";
+import Hero from "../components/home/Hero";
+import HomeMarquee from "../components/home/HomeMarquee.astro";
+import SponsorsMarquee from "../components/home/SponsorsMarquee.astro";
+import ScopesSection from "../components/home/ScopesSection";
+import AboutSection from "../components/home/AboutSection.astro";
+import KeynotesSection from "../components/home/KeynotesSection.astro";
+import DeadlinesSection from "../components/home/DeadlinesSection.astro";
+import PricingSection from "../components/home/PricingSection";
+import OrganizersPartners from "../components/home/OrganizersPartners.astro";
 ---
 
 <Layout>
-  <HomeHeroSection />
+  <div
+    class="min-h-screen bg-[#FDFDFD] font-['Plus_Jakarta_Sans',sans-serif] text-[#0A1A12] selection:bg-emerald-500 selection:text-white"
+  >
+    <Navigation currentPath="/" client:load />
 
-  <div class="bg-teal-300 py-5 overflow-hidden border-y border-emerald-400">
-    <div class="animate-marquee flex items-center gap-16 whitespace-nowrap will-change-transform">
-      {
-        [1, 2, 3, 4, 5, 6].map((i) => (
-          <div class="flex items-center gap-16 text-emerald-950 font-black text-sm tracking-[0.2em] uppercase italic">
-            <span>Scientific Research</span>
-            <span class="w-2 h-2 rounded-full bg-emerald-950" />
-            <span>Biomedical Innovation</span>
-            <span class="w-2 h-2 rounded-full bg-emerald-950" />
-            <span>Artificial Intelligence</span>
-            <span class="w-2 h-2 rounded-full bg-emerald-950" />
-            <span>Public Wellness</span>
-            <span class="w-2 h-2 rounded-full bg-emerald-950" />
-          </div>
-        ))
-      }
-    </div>
+    <Hero client:load />
+    <SponsorsMarquee />
+    <ScopesSection client:load />
+    <AboutSection />
+    <HomeMarquee />
+    <KeynotesSection />
+    <DeadlinesSection />
+    <PricingSection client:load />
+
+    <OrganizersPartners />
+    <Footer />
   </div>
+</Layout>
 
-  <HomeScopeSection client:load />
-  <HomeAboutSection />
-  <HomeSpeakersSection />
-  <HomeDeadlinesSection />
-  <HomePricingSection client:load />
-</Layout>;
+<style is:global>
+  @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;700;800&display=swap");
+
+  .animate-in {
+    animation: enter 0.2s ease-out;
+  }
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(-0.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

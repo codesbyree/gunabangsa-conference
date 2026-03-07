@@ -1,0 +1,130 @@
+---
+import { AlertTriangle, Presentation, MonitorPlay, ListChecks, CalendarX } from "lucide-react";
+---
+
+<div class="max-w-6xl mx-auto px-6 py-24 space-y-24">
+  {/* Important Notice Section */}
+  <section class="space-y-8">
+    <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
+      <AlertTriangle className="w-8 h-8 text-emerald-600" />
+      <h2 class="text-3xl font-black text-[#062C1B] tracking-tighter uppercase leading-tight">Important Notice</h2>
+    </div>
+    <div class="bg-amber-50/80 p-8 rounded-3xl border border-amber-200">
+      <p class="text-lg text-slate-700 leading-relaxed font-medium mb-4">
+        All accepted papers are <strong class="text-amber-700">required to give an oral presentation</strong>.
+      </p>
+      <ul class="list-disc list-inside text-lg text-slate-700 leading-relaxed font-medium space-y-2">
+        <li>The duration of each presentation is <strong>15 minutes</strong>, including the Q&A session.</li>
+        <li>
+          You will have <strong>10 minutes for your presentation</strong> and <strong
+            >5 minutes for audience questions and discussion</strong
+          >.
+        </li>
+        <li>
+          An LCD projector and computer (Windows 7, MS PowerPoint, and Adobe Acrobat Reader) will be available in each
+          session room for presentations.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  {/* Preparation Sections (Visual & General Considerations) */}
+  <div class="grid lg:grid-cols-2 gap-16">
+    {/* Visual Preparation */}
+    <section class="space-y-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
+      <div class="flex items-center gap-4 mb-4">
+        <MonitorPlay className="w-7 h-7 text-emerald-600" />
+        <h3 class="text-2xl font-extrabold text-[#062C1B] uppercase tracking-tight">Visual Preparation</h3>
+      </div>
+      <div class="space-y-6">
+        {
+          [
+            "To ensure efficient use of time, please upload your PPT or PDF file using the provided link.",
+            "To avoid software compatibility issues (MS PowerPoint), speakers are strongly advised to embed all fonts in their PowerPoint file and bring a backup version in PDF format.",
+            "Speakers must arrive in the session room 30 minutes before the session starts to report to the session chair. If another session is taking place prior to your scheduled time, please wait until your session begins so as not to disturb ongoing presentations.",
+          ].map((text, i) => (
+            <div class="flex gap-5">
+              <div class="w-7 h-7 bg-emerald-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
+                {i + 1}
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed font-medium">{text}</p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    {/* General Considerations */}
+    <section class="space-y-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
+      <div class="flex items-center gap-4 mb-4">
+        <ListChecks className="w-7 h-7 text-emerald-600" />
+        <h3 class="text-2xl font-extrabold text-[#062C1B] uppercase tracking-tight">General Considerations</h3>
+      </div>
+      <div class="space-y-6">
+        <p class="text-slate-600 text-sm font-medium">When preparing your presentation slides:</p>
+        <ul class="space-y-4">
+          {
+            [
+              "Limit the number of words per visual to no more than 20 words.",
+              "Provide spacing between lines of text, at least the height of a capital letter.",
+              "All fonts, including those on graphics, should be 18-point size or larger.",
+              "Graphs and charts should have bold lines and symbols with sharp contrast against the background.",
+            ].map((text) => (
+              <li class="flex items-start gap-4">
+                <div class="w-2 h-2 rounded-full bg-emerald-400 mt-2 shrink-0" />
+                <p class="text-sm text-slate-600 leading-relaxed font-medium">{text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  {/* No-Show Policy Section */}
+  <section class="space-y-12">
+    <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
+      <CalendarX className="w-8 h-8 text-rose-600" />
+      <h3 class="text-2xl font-black text-[#062C1B] tracking-tighter uppercase leading-tight">No-Show Policy</h3>
+    </div>
+
+    <div class="bg-rose-50/50 p-8 md:p-12 rounded-[3rem] border border-rose-100 relative overflow-hidden">
+      <div class="absolute right-0 bottom-0 p-10 opacity-5 pointer-events-none text-rose-500">
+        <AlertTriangle className="w-64 h-64" />
+      </div>
+      <div class="relative z-10 max-w-4xl">
+        <p class="text-lg font-bold text-rose-950 mb-6 leading-relaxed">
+          All accepted papers must be presented at the conference by at least one of the authors. A paper will be
+          considered a <span class="bg-rose-200 px-2 py-1 rounded">no-show</span> if the author fails to present the paper
+          at the scheduled session without prior approval from the organizing committee.
+        </p>
+
+        <h4 class="font-bold text-rose-900 mb-4 text-xl">Consequences of a no-show:</h4>
+        <ul class="space-y-3 mb-8">
+          {
+            [
+              "The paper will be removed from the conference proceedings.",
+              "The authors will not receive a presentation certificate.",
+              "Registration fees are non-refundable.",
+            ].map((item) => (
+              <li class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-full bg-rose-200 flex items-center justify-center shrink-0">
+                  <span class="text-rose-600 text-xs font-black">X</span>
+                </div>
+                <span class="text-rose-950 font-medium">{item}</span>
+              </li>
+            ))
+          }
+        </ul>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-rose-100 border-l-4 border-l-rose-500">
+          <p class="text-sm text-slate-600 font-medium leading-relaxed">
+            <strong>In case of emergency or force majeure:</strong> authors must inform the organizing committee in writing
+            no later than <strong>1 days before the conference date</strong>. Approval of substitute presenters or
+            alternative presentation modes is subject to the committee’s discretion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

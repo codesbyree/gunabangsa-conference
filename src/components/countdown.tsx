@@ -18,11 +18,11 @@ const calculateTimeLeft = (targetDate: number) => {
 export default function Countdown() {
   // Initialize with a function to avoid unnecessary Date objects on re-renders
   const [timeLeft, setTimeLeft] = useState(() =>
-    calculateTimeLeft(new Date("November 24, 2026 09:00:00").getTime()),
+    calculateTimeLeft(new Date("November 5, 2026 09:00:00").getTime()),
   );
 
   useEffect(() => {
-    const target = new Date("November 24, 2026 09:00:00").getTime();
+    const target = new Date("November 5, 2026 09:00:00").getTime();
 
     const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft(target));

@@ -3,17 +3,17 @@ import Layout from "../layouts/Layout.astro";
 import Navigation from "../components/shared/Navigation";
 import Footer from "../components/shared/Footer.astro";
 import SubPageHeader from "../components/shared/SubPageHeader.astro";
-import ProgramSchedule from "../components/program/ProgramSchedule.astro";
+import SubmissionInstructions from "../components/revised-submission/SubmissionInstructions.astro";
 ---
 
 <Layout>
   <div
     class="min-h-screen bg-[#FDFDFD] font-['Plus_Jakarta_Sans',sans-serif] text-[#0A1A12] selection:bg-emerald-500 selection:text-white"
   >
-    <Navigation currentPath="/program" client:load />
+    <Navigation currentPath="/revised-submission" client:load />
 
-    <SubPageHeader title="Program" />
-    <ProgramSchedule />
+    <SubPageHeader title="Revised Submission Instructions" />
+    <SubmissionInstructions />
 
     <Footer />
   </div>

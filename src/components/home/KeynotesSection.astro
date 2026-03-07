@@ -1,40 +1,6 @@
 ---
-import { ExternalLinkIcon } from "lucide-react";
-
-const speakers = [
-  {
-    id: 1,
-    name: "Dr. Alex Sterling",
-    title: "Professor of Health AI",
-    affiliation: "Oxford University, UK",
-    bio: "Dr. Sterling leads the Neural Health Laboratory at Oxford, focusing on real-time diagnostic AI for emergency clinical settings.",
-    img: "https://images.unsplash.com/photo-1712215544003-af10130f8eb3?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
-  {
-    id: 2,
-    name: "Dr. Elena Rossi",
-    title: "Biomedical Systems Lead",
-    affiliation: "Stanford Medicine, USA",
-    bio: "An expert in wearable health technology, Dr. Rossi develops bio-compatible sensors that track internal metabolic changes.",
-    img: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    id: 3,
-    name: "Prof. Marcus Thorne",
-    title: "Dir. Public Health Ethics",
-    affiliation: "Toronto Health Center, Canada",
-    bio: "Professor Thorne specializes in the ethics of global pandemic modeling and epidemiological surveillance.",
-    img: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    id: 4,
-    name: "Dr. Sarah Chen",
-    title: "Chief Clinical Pharmacist",
-    affiliation: "National University, Singapore",
-    bio: "Dr. Chen is a pioneer in personalized pharmacology, bridging genomic data with clinical drug delivery.",
-    img: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800",
-  },
-];
+import { SPEAKERS } from "../../data/constants";
+import { ExternalLink } from "lucide-react";
 ---
 
 <section id="speakers" class="py-24 bg-[#FDFDFD]">
@@ -43,14 +9,12 @@ const speakers = [
       <h2 class="text-4xl md:text-5xl font-extrabold text-[#062C1B] mb-6">Distinguished Keynotes</h2>
       <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full"></div>
     </div>
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {
-        speakers.map((speaker) => (
-          <div class="group relative h-140 overflow-hidden rounded-xl bg-black border border-slate-200">
-            <div class="absolute inset-0 grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110 opacity-70">
-              <img src={speaker.img} alt={speaker.name} class="w-full h-full object-cover" />
-            </div>
-            <div class="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
+        SPEAKERS.map((speaker) => (
+          <div class="group relative h-[560px] overflow-hidden rounded-xl bg-emerald-950 border border-slate-200">
+            <div class="absolute inset-0 bg-linear-to-br from-emerald-900/50 to-emerald-950/80 transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
             <div class="absolute bottom-0 left-0 p-8 z-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
               <h4 class="text-2xl font-black text-white leading-tight mb-2 tracking-tighter">{speaker.name}</h4>
               <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest mb-1">{speaker.title}</p>
@@ -64,7 +28,7 @@ const speakers = [
                   </span>
                   <h4 class="text-xl font-extrabold text-[#062C1B] leading-tight">{speaker.name}</h4>
                 </div>
-                <ExternalLinkIcon className="w-4 h-4 text-slate-300" />
+                <ExternalLink className="w-4 h-4 text-slate-300" />
               </div>
               <div class="flex-1 overflow-y-auto custom-scrollbar pr-2">
                 <p class="text-xs font-bold text-emerald-700 uppercase mb-3 tracking-tighter">Academic Background</p>
@@ -76,7 +40,7 @@ const speakers = [
                   </div>
                   <div class="p-3 bg-slate-50 border-l-2 border-emerald-500">
                     <p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Session</p>
-                    <p class="text-xs font-bold text-slate-800 leading-tight">Nov 24, 11:30 (Stage 01)</p>
+                    <p class="text-xs font-bold text-slate-800 leading-tight">Nov 5, 11:30 (Stage 01)</p>
                   </div>
                 </div>
               </div>
