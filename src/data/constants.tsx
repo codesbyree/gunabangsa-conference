@@ -104,24 +104,30 @@ export const SCOPES = [
 export const SPEAKERS = [
   {
     id: 1,
-    name: "Speaker One",
+    name: "To be announced",
     title: "Position Title",
     affiliation: "University or Organization",
     bio: "Detailed biography and background information will be updated here soon.",
+    topic: 'Machine Learning in Medical Field',
+    sessionDate: 'July 3rd, 2026 (Arena 1)'
   },
   {
     id: 2,
-    name: "Speaker Two",
+    name: "To be announced",
     title: "Position Title",
     affiliation: "University or Organization",
     bio: "Detailed biography and background information will be updated here soon.",
+    topic: 'Machine Learning in Medical Field',
+    sessionDate: 'July 3rd, 2026 (Arena 1)'
   },
   {
     id: 3,
-    name: "Speaker Three",
+    name: "To be announced",
     title: "Position Title",
     affiliation: "University or Organization",
     bio: "Detailed biography and background information will be updated here soon.",
+    topic: 'Machine Learning in Medical Field',
+    sessionDate: 'July 3rd, 2026 (Arena 1)'
   }
 ];
 
@@ -134,51 +140,71 @@ export const DEADLINES = [
   { event: "Conference Day", description: "Join us for three days of insightful presentations, discussions, and networking.", date: "November 5-7, 2026", status: "Event" }
 ];
 
-export const PRICING = [
+export const PRICING_SECTIONS = [
   {
-    category: "IEEE Member",
-    id: "ieee",
-    prices: {
-      IDR: [
-        { label: "Members (Online/Onsite)", val: "4.000.000" },
-        { label: "Student Members (Online/Onsite)", val: "3.500.000" }
-      ],
-      USD: [
-        { label: "Members (Online/Onsite)", val: "250" },
-        { label: "Student Members (Online/Onsite)", val: "225" }
-      ]
-    },
-    benefits: [
-      "Official Congress Documentation",
-      "Digital Certificates of Attendance",
-      "Conference Program eBook",
-      "Abstract eBook",
-      "Welcome Cocktail & Gala Dinner*",
-      "Attendance at all Scientific Sessions",
-      "Catering during Scheduled Breaks",
+    title: "Online Participation",
+    columns: 4,
+    tiers: [
+      {
+        name: "Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 75 / IDR 1.250.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 100 / IDR 1.750.000" }
+      },
+      {
+        name: "Student Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 50 / IDR 850.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 75 / IDR 1.250.000" }
+      },
+      {
+        name: "Participant",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 50 / IDR 850.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 75 / IDR 1.250.000" }
+      },
+      {
+        name: "Student Participant",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 30 / IDR 500.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 50 / IDR 850.000" }
+      }
     ]
   },
   {
-    category: "Non IEEE Member",
-    id: "non-ieee",
-    prices: {
-      IDR: [
-        { label: "Online Participation", val: "5.500.000" },
-        { label: "Onsite Participation", val: "7.500.000" }
-      ],
-      USD: [
-        { label: "Online Participation", val: "350" },
-        { label: "Onsite Participation", val: "500" }
-      ]
-    },
-    benefits: [
-      "Official Congress Documentation",
-      "Digital Certificates of Attendance",
-      "Conference Program eBook",
-      "Abstract eBook",
-      "Onsite: 3-Night Stay (Deluxe Twin Sharing)",
-      "Onsite: Full Dining Package (3B, 2L, 2D)",
-      "Closing Dinner Included*",
+    title: "Onsite Participation (Istanbul, Turkiye)",
+    columns: 4,
+    tiers: [
+      {
+        name: "Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 125 / IDR 2.250.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 175 / IDR 3.000.000" }
+      },
+      {
+        name: "Student Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 100 / IDR 1.750.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 125 / IDR 2.250.000" }
+      },
+      {
+        name: "Participant",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 100 / IDR 1.750.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 125 / IDR 2.250.000" }
+      },
+      {
+        name: "Student Participant",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 75 / IDR 1.250.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 100 / IDR 1.750.000" }
+      }
+    ]
+  },
+  {
+    title: "Publication Fee",
+    columns: 1,
+    tiers: [
+      {
+        name: "Journal",
+        description: "At Cost (depending on publisher)"
+      }
     ]
   }
 ];

@@ -1,78 +1,50 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/shared/Navigation";
-import Footer from "../components/shared/Footer.astro";
 import SubPageHeader from "../components/shared/SubPageHeader.astro";
 ---
 
-<Layout title="Gallery | HEALTHMED-IC 2026">
-  <div
-    class="min-h-screen bg-[#FDFDFD] font-['Plus_Jakarta_Sans',sans-serif] text-[#0A1A12] selection:bg-emerald-500 selection:text-white"
-  >
-    <Navigation client:load currentPath="/gallery" />
+<Layout>
+  <SubPageHeader title="Gallery" />
 
-    <SubPageHeader title="Gallery" />
+  <section class="max-w-6xl mx-auto px-6 py-24">
+    <div class="mb-12 text-center text-slate-600 max-w-2xl mx-auto">
+      <p class="leading-relaxed text-lg font-medium">
+        Explore moments from our previous conferences and get a glimpse of the engaging sessions, networking events, and
+        beautiful venues.
+      </p>
+    </div>
 
-    <section class="max-w-6xl mx-auto px-6 py-24">
-      <div class="mb-12 text-center text-slate-600 max-w-2xl mx-auto">
-        <p class="leading-relaxed text-lg font-medium">
-          Explore moments from our previous conferences and get a glimpse of the engaging sessions, networking events,
-          and beautiful venues.
-        </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div
+        class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer"
+      >
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 1</p>
       </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div
-          class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer"
-        >
-          <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 1</p>
-        </div>
-        <div
-          class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer"
-        >
-          <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 2</p>
-        </div>
-        <div
-          class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer"
-        >
-          <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 3</p>
-        </div>
-        <div
-          class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer sm:flex"
-        >
-          <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 4</p>
-        </div>
-        <div
-          class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer sm:flex"
-        >
-          <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 5</p>
-        </div>
-        <div
-          class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer sm:flex"
-        >
-          <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 6</p>
-        </div>
+      <div
+        class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer"
+      >
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 2</p>
       </div>
-    </section>
-
-    <Footer />
-  </div>
+      <div
+        class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer"
+      >
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 3</p>
+      </div>
+      <div
+        class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer sm:flex"
+      >
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 4</p>
+      </div>
+      <div
+        class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer sm:flex"
+      >
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 5</p>
+      </div>
+      <div
+        class="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center hover:-translate-y-2 transition-all cursor-pointer sm:flex"
+      >
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image 6</p>
+      </div>
+    </div>
+  </section>
 </Layout>
-
-<style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;700;800&display=swap");
-
-  .animate-in {
-    animation: enter 0.2s ease-out;
-  }
-  @keyframes enter {
-    from {
-      opacity: 0;
-      transform: translateY(-0.5rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>

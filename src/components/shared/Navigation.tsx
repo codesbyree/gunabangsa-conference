@@ -12,7 +12,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
 
   return (
     <nav className="fixed top-6 left-0 right-0 z-50 px-4">
-      <div className="max-w-6xl mx-auto bg-[#062C1B]/90 backdrop-blur-xl border border-white/10 rounded-full h-16 flex items-center justify-between px-6 shadow-2xl shadow-emerald-950/20">
+      <div className="max-w-6xl mx-auto bg-emerald-950/90 backdrop-blur-xl border border-white/10 rounded-full h-16 flex items-center justify-between px-6 pr-4 shadow-2xl shadow-emerald-950/20">
         <a href="/" className="flex items-center gap-3 group">
           <div className="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center font-bold text-white italic group-hover:scale-110 transition-transform">H</div>
           <span className="font-extrabold text-white tracking-tighter text-xl">HEALTHMED-IC</span>
@@ -33,6 +33,13 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
             VENUE
           </a>
 
+           <a 
+            href="/committee" 
+            className={`hover:text-emerald-400 transition uppercase tracking-widest ${currentPath === '/committee' ? 'text-emerald-400' : ''}`}
+          >
+            COMMITTEE
+          </a>
+
           {/* Author Information Dropdown */}
           <div 
             className="relative"
@@ -45,7 +52,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
             
             {isDropdownOpen && (
               <div className="absolute top-full left-0 pt-4 w-72 animate-in fade-in slide-in-from-top-2 duration-200">
-                <div className="bg-[#062C1B] border border-white/10 rounded-2xl overflow-hidden shadow-2xl py-2">
+                <div className="bg-emerald-950 border border-white/10 rounded-2xl overflow-hidden shadow-2xl py-2">
                   <a 
                     href="/initial-submission"
                     className="block w-full text-left px-6 py-3 text-sm font-bold text-emerald-100/70 hover:bg-emerald-500 hover:text-emerald-950 transition-colors border-b border-white/5"
@@ -81,13 +88,6 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
             )}
           </div>
 
-          <a 
-            href="/committee" 
-            className={`hover:text-emerald-400 transition uppercase tracking-widest ${currentPath === '/committee' ? 'text-emerald-400' : ''}`}
-          >
-            COMMITTEE
-          </a>
-
           {/* More Information Dropdown */}
           <div 
             className="relative"
@@ -100,7 +100,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
             
             {isMoreInfoOpen && (
               <div className="absolute top-full left-0 pt-4 w-56 animate-in fade-in slide-in-from-top-2 duration-200">
-                <div className="bg-[#062C1B] border border-white/10 rounded-2xl overflow-hidden shadow-2xl py-2">
+                <div className="bg-emerald-950 border border-white/10 rounded-2xl overflow-hidden shadow-2xl py-2">
                   <a 
                     href="/partners"
                     className="block w-full text-left px-6 py-3 text-sm font-bold text-emerald-100/70 hover:bg-emerald-500 hover:text-emerald-950 transition-colors border-b border-white/5"
@@ -143,9 +143,10 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 mt-2 px-4">
-          <div className="bg-[#062C1B] rounded-2xl border border-white/10 p-6 flex flex-col gap-4 shadow-2xl">
+          <div className="bg-emerald-900 rounded-2xl border border-white/10 p-6 flex flex-col gap-4 shadow-2xl">
             <a href="/" className="text-left text-white font-bold text-sm tracking-widest block">HOME</a>
             <a href="/venue" className="text-left text-white font-bold text-sm tracking-widest block">VENUE</a>
+            <a href="/committee" className="text-left text-white font-bold text-sm tracking-widest block">COMMITTEE</a>
             <div className="border-t border-white/10 pt-4">
               <span className="text-[10px] font-black text-emerald-500 uppercase tracking-[0.2em] mb-2 block">Author Info</span>
               <div className="space-y-3">
@@ -156,7 +157,6 @@ const Navigation: React.FC<NavigationProps> = ({ currentPath = '/' }) => {
                 <a href="/paper-upload-faqs" className="block text-left text-white/70 font-bold text-sm tracking-widest text-nowrap">Paper Upload FAQs</a>
               </div>
             </div>
-            <a href="/committee" className="text-left text-white font-bold text-sm tracking-widest block">COMMITTEE</a>
             <div className="border-t border-white/10 pt-4">
               <span className="text-[10px] font-black text-emerald-500 uppercase tracking-[0.2em] mb-2 block">More Information</span>
               <div className="space-y-3">

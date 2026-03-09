@@ -1,6 +1,7 @@
 ---
-import Footer from "../components/reusables/footer.astro";
-import Navigation from "../components/reusables/navigation";
+import Navigation from "../components/shared/Navigation";
+import Footer from "../components/shared/Footer.astro";
+
 import "../styles/global.css";
 ---
 
@@ -14,28 +15,15 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>HEALTHMED-IC</title>
   </head>
-  <body class="bg-[#FDFDFD]">
-    <!-- <Navigation client:load /> -->
-    <main>
+  <body class="font-['Plus_Jakarta_Sans',sans-serif] selection:bg-emerald-500 selection:text-white">
+    <Navigation client:load />
+    <main class="min-h-screen">
       <slot />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
+
     <style is:global>
-      @font-face {
-        font-family: "Barlow-Regular";
-        src: url("/fonts/Barlow-Regular.woff2") format("woff2"), url("/fonts/Barlow-Regular.ttf");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-      @font-face {
-        font-family: "BarlowCondensed-Regular";
-        src: url("/fonts/BarlowCondensed-Regular.woff2") format("woff2"),
-          url("/fonts/BarlowCondensed-Regular.ttf") format("ttf");
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;700;800&display=swap");
 
       html {
         scroll-behavior: smooth;

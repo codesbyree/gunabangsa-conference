@@ -1,127 +1,96 @@
 ---
+import { MapPin, PhoneIcon, MailIcon } from "lucide-react";
+
 import Layout from "../layouts/Layout.astro";
-import Navigation from "../components/shared/Navigation";
-import Footer from "../components/shared/Footer.astro";
 import SubPageHeader from "../components/shared/SubPageHeader.astro";
-import { MapPin, Phone, Mail } from "lucide-react";
-import venueImage from "../assets/venue.png";
 ---
 
 <Layout>
-  <div
-    class="min-h-screen bg-[#FDFDFD] font-['Plus_Jakarta_Sans',sans-serif] text-[#0A1A12] selection:bg-emerald-500 selection:text-white"
-  >
-    <Navigation currentPath="/venue" client:load />
+  <SubPageHeader title="Venue" />
+  <section class="max-w-6xl mx-auto px-6 py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Venue Image -->
+      <div class="relative group">
+        <div
+          class="absolute -inset-4 bg-emerald-500/10 rounded-4xl transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"
+        >
+        </div>
+        <img
+          src="/assets/images/venue.png"
+          alt="Conference Venue"
+          class="relative rounded-3xl shadow-2xl shadow-emerald-950/20 w-full h-auto object-cover aspect-4/3 transform group-hover:-translate-y-2 transition-transform duration-500"
+        />
+      </div>
 
-    <SubPageHeader title="Venue" />
-
-    <section class="max-w-6xl mx-auto px-6 py-24">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <!-- Venue Image -->
-        <div class="relative group">
+      <!-- Venue Details -->
+      <div class="flex flex-col gap-8">
+        <div>
           <div
-            class="absolute -inset-4 bg-emerald-500/10 rounded-4xl transform -rotate-2 group-hover:rotate-0 transition-transform duration-500"
+            class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-600 font-bold text-sm tracking-widest uppercase mb-6"
           >
+            <MapPin className="w-4 h-4" />
+            Event Location
           </div>
-          <img
-            src={venueImage.src}
-            alt="Conference Venue"
-            class="relative rounded-3xl shadow-2xl shadow-emerald-950/20 w-full h-auto object-cover aspect-4/3 transform group-hover:-translate-y-2 transition-transform duration-500"
-          />
+          <h2 class="text-4xl md:text-5xl font-black text-emerald-950 mb-6 tracking-tighter leading-tight">
+            İstanbul Gelişim Üniversitesi Tower
+          </h2>
+          <p class="text-lg text-slate-600 leading-relaxed font-medium">
+            Join us at the state-of-the-art İstanbul Gelişim Üniversitesi Tower, designed to inspire collaboration and
+            innovation in medical sciences. The venue features modern auditoriums, interactive exhibition spaces, and
+            comfortable networking areas.
+          </p>
         </div>
 
-        <!-- Venue Details -->
-        <div class="flex flex-col gap-8">
-          <div>
+        <div class="flex flex-col gap-6 bg-slate-50 p-8 rounded-2xl border border-slate-100">
+          <h3 class="text-xl font-bold text-emerald-950">Contact & Address</h3>
+
+          <div class="flex items-start gap-4 text-slate-600">
             <div
-              class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-600 font-bold text-sm tracking-widest uppercase mb-6"
+              class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-emerald-600"
             >
-              <MapPin class="w-4 h-4" />
-              Event Location
+              <MapPin className="w-5 h-5" />
             </div>
-            <h2 class="text-4xl md:text-5xl font-black text-[#062C1B] mb-6 tracking-tighter leading-tight">
-              İstanbul Gelişim Üniversitesi Tower
-            </h2>
-            <p class="text-lg text-slate-600 leading-relaxed font-medium">
-              Join us at the state-of-the-art İstanbul Gelişim Üniversitesi Tower, designed to inspire collaboration and
-              innovation in medical sciences. The venue features modern auditoriums, interactive exhibition spaces, and
-              comfortable networking areas.
-            </p>
+            <div>
+              <strong class="block text-emerald-950 mb-1">Address</strong>
+              <p>
+                <a
+                  href="https://maps.app.goo.gl/UAv52MrqdmivzzHs5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-emerald-600 transition"
+                >
+                  Cihangir, Petrol Ofisi Cd. No:5<br />
+                  34310 Avcılar/İstanbul, Türkiye
+                </a>
+              </p>
+            </div>
           </div>
 
-          <div class="flex flex-col gap-6 bg-slate-50 p-8 rounded-2xl border border-slate-100">
-            <h3 class="text-xl font-bold text-[#062C1B]">Contact & Address</h3>
-
-            <div class="flex items-start gap-4 text-slate-600">
-              <div
-                class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-emerald-600"
-              >
-                <MapPin className="w-5 h-5" />
-              </div>
-              <div>
-                <strong class="block text-[#062C1B] mb-1">Address</strong>
-                <p>
-                  <a
-                    href="https://maps.app.goo.gl/UAv52MrqdmivzzHs5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:text-emerald-600 transition"
-                  >
-                    Cihangir, Petrol Ofisi Cd. No:5<br />
-                    34310 Avcılar/İstanbul, Türkiye
-                  </a>
-                </p>
-              </div>
+          <div class="flex items-start gap-4 text-slate-600">
+            <div
+              class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-emerald-600"
+            >
+              <PhoneIcon className="w-5 h-5" />
             </div>
-
-            <div class="flex items-start gap-4 text-slate-600">
-              <div
-                class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-emerald-600"
-              >
-                <Phone className="w-5 h-5" />
-              </div>
-              <div>
-                <strong class="block text-[#062C1B] mb-1">Phone</strong>
-                <p>+1 (555) 123-4567</p>
-              </div>
+            <div>
+              <strong class="block text-emerald-950 mb-1">Phone</strong>
+              <p>+1 (555) 123-4567</p>
             </div>
+          </div>
 
-            <div class="flex items-start gap-4 text-slate-600">
-              <div
-                class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-emerald-600"
-              >
-                <Mail className="w-5 h-5" />
-              </div>
-              <div>
-                <strong class="block text-[#062C1B] mb-1">Email</strong>
-                <a href="mailto:venue@healthmedic.com" class="hover:text-emerald-600 transition"
-                  >venue@healthmedic.com</a
-                >
-              </div>
+          <div class="flex items-start gap-4 text-slate-600">
+            <div
+              class="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center shrink-0 text-emerald-600"
+            >
+              <MailIcon className="w-5 h-5" />
+            </div>
+            <div>
+              <strong class="block text-emerald-950 mb-1">Email</strong>
+              <a href="mailto:venue@healthmedic.com" class="hover:text-emerald-600 transition">venue@healthmedic.com</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <Footer />
-  </div>
+    </div>
+  </section>
 </Layout>
-
-<style is:global>
-  @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;700;800&display=swap");
-
-  .animate-in {
-    animation: enter 0.2s ease-out;
-  }
-  @keyframes enter {
-    from {
-      opacity: 0;
-      transform: translateY(-0.5rem);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>

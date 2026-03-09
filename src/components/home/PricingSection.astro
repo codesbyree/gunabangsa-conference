@@ -1,0 +1,35 @@
+---
+import { PRICING_SECTIONS } from "../../data/constants";
+
+import PricingCard from "../reusables/PricingCard.astro";
+---
+
+<section id="pricing" class="py-24 bg-white border-b border-slate-100 relative">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16">
+      <div class="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">Fees</div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-emerald-950 mb-6">Registration Fees</h2>
+    </div>
+
+    <div class="space-y-10">
+      {
+        PRICING_SECTIONS.map((section: any, idx: number) => (
+          <div class="flex flex-col gap-4">
+            <h3 class="text-xl font-bold text-emerald-900/80 mb-4 tracking-tight text-center">{section.title}</h3>
+            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+              {section.tiers.map((tier: any, tIdx: number) => (
+                <PricingCard
+                  cardTitle={tier.name}
+                  cardSubtitle={tier.subtitle}
+                  cardEarlyBird={tier.earlyBird}
+                  cardRegular={tier.regular}
+                  cardDescription={tier.description}
+                />
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

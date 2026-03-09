@@ -11,7 +11,7 @@ const ScopesSection: React.FC = () => {
         <div className="grid lg:grid-cols-12 gap-12 items-end mb-20">
           <div className="lg:col-span-8">
             <div className="text-emerald-600 text-xs font-black uppercase tracking-[0.4em] mb-4">Our Focus</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-[#062C1B] leading-tight">Comprehensive Research Tracks</h2>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 leading-tight">Comprehensive Research Tracks</h2>
           </div>
           <div className="lg:col-span-4 text-slate-500 text-sm font-medium leading-relaxed">
             We cover the full spectrum of modern health sciences, from foundational clinical practice to the cutting-edge of biomedical engineering.
@@ -19,9 +19,9 @@ const ScopesSection: React.FC = () => {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 border-t border-l border-slate-100">
           {SCOPES.map(scope => (
-            <div key={scope.id} className={`group p-8 border-r border-b border-slate-100 transition-all duration-300 relative overflow-hidden cursor-pointer ${activeScope === scope.id ? 'bg-[#062C1B]' : 'hover:bg-slate-50'}`} onClick={() => setActiveScope(activeScope === scope.id ? null : scope.id)}>
+            <div key={scope.id} className={`group p-8 border-r border-b border-slate-100 transition-all duration-300 relative overflow-hidden cursor-pointer ${activeScope === scope.id ? 'bg-emerald-950' : 'hover:bg-slate-50'}`} onClick={() => setActiveScope(activeScope === scope.id ? null : scope.id)}>
               <div className={`mb-6 transition-colors ${activeScope === scope.id ? 'text-emerald-400' : 'text-emerald-600'}`}>{scope.icon}</div>
-              <h3 className={`text-lg font-extrabold mb-4 leading-snug transition-colors ${activeScope === scope.id ? 'text-white' : 'text-[#062C1B]'}`}>{scope.title}</h3>
+              <h3 className={`text-lg font-extrabold mb-4 leading-snug transition-colors ${activeScope === scope.id ? 'text-white' : 'text-emerald-950'}`}>{scope.title}</h3>
               <div className={`overflow-hidden transition-all duration-500 ${activeScope === scope.id ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'}`}>
                  <ul className="space-y-3 mt-4">
                     {scope.items.map((item, idx) => (
