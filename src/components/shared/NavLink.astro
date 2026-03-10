@@ -1,0 +1,11 @@
+---
+const { href, active } = Astro.props;
+console.log(href, active);
+---
+
+<a
+  href={href}
+  class={`hover:text-emerald-400 transition uppercase tracking-widest ${active ? "text-emerald-400" : ""}`}
+>
+  <slot />
+</a>

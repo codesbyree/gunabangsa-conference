@@ -2,7 +2,7 @@
 const { title } = Astro.props;
 ---
 
-<section class="relative bg-[#FDFDFD] pt-40 pb-0 overflow-hidden">
+<section class="relative bg-white pt-36 pb-0 overflow-hidden">
   <div class="absolute top-20 left-[12%] opacity-20 pointer-events-none">
     <div class="grid grid-cols-4 gap-3">
       {[...Array(12)].map((_, i) => <div class="w-1.5 h-1.5 rounded-full bg-slate-500" />)}
@@ -13,8 +13,10 @@ const { title } = Astro.props;
       {[...Array(9)].map((_, i) => <div class="w-1.5 h-1.5 rounded-full bg-slate-500" />)}
     </div>
   </div>
-  <div class="max-w-7xl mx-auto px-6 text-center pb-28 relative z-10">
-    <h1 class="text-6xl md:text-7xl font-black text-emerald-950 mb-6 tracking-tighter uppercase leading-tight">
+  <div class="max-w-7xl mx-auto px-6 text-center pb-16 relative z-10">
+    <h1
+      class="text-4xl md:text-6xl lg:text-7xl font-black text-emerald-950 mb-6 tracking-tighter uppercase leading-tight"
+    >
       {title}
     </h1>
     <div class="flex items-center justify-center gap-3 text-sm font-bold tracking-tight">

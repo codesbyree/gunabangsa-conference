@@ -1,6 +1,6 @@
 ---
-import Navigation from "../components/shared/Navigation";
 import Footer from "../components/shared/Footer.astro";
+import Navigation from "../components/shared/Navigation.astro";
 
 import "../styles/global.css";
 ---
@@ -16,7 +16,7 @@ import "../styles/global.css";
     <title>HEALTHMED-IC</title>
   </head>
   <body class="font-['Plus_Jakarta_Sans',sans-serif] selection:bg-emerald-500 selection:text-white">
-    <Navigation client:load />
+    <Navigation />
     <main class="min-h-screen">
       <slot />
     </main>

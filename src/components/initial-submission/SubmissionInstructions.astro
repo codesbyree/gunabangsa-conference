@@ -2,16 +2,15 @@
 import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } from "lucide-react";
 ---
 
-<div class="max-w-6xl mx-auto px-6 py-24 space-y-24">
-  {/* 1. Preparing Article Submission Section */}
+<div class="max-w-6xl mx-auto px-6 py-24 space-y-20">
   <section class="space-y-12">
     <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
       <FileCode className="w-8 h-8 text-emerald-600" />
-      <h2 class="text-3xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+      <h2 class="text-xl md:text-2xl lg:text-3xl font-black text-emerald-950 tracking-tighter uppercase">
         Preparing Article Submission
       </h2>
     </div>
-    <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
+    <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 lg:gap-x-15">
       {
         [
           "Ensure that the manuscript aligns with the scope and topics of the conference.",
@@ -27,22 +26,24 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
             <div class="w-10 h-10 bg-emerald-950 rounded-lg shrink-0 flex items-center justify-center font-black text-white text-sm group-hover:bg-emerald-500 transition-colors">
               {i + 1}
             </div>
-            <p class="text-sm text-slate-600 leading-relaxed font-medium">{text}</p>
+            <p class="text-slate-600 leading-relaxed font-medium">{text}</p>
           </div>
         ))
       }
     </div>
   </section>
 
-  {/* 2. Authentication Processes */}
-  <div class="grid lg:grid-cols-2 gap-16">
+  <div class="grid lg:grid-cols-2 gap-4">
     {/* Creating an Account */}
-    <section class="space-y-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
+    <section class="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
       <div class="flex items-center gap-4 mb-4">
         <UserPlus className="w-7 h-7 text-emerald-600" />
-        <h3 class="text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">Creating an Account</h3>
+        <h3 class="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">
+          Creating an Account
+        </h3>
       </div>
-      <div class="space-y-6">
+
+      <div class="space-y-4">
         {
           [
             "Go to the portal login page or click the 'Login' button in the top-right corner of the homepage.",
@@ -54,18 +55,19 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
               <div class="w-7 h-7 bg-emerald-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
                 {i + 1}
               </div>
-              <p class="text-sm text-slate-600 leading-relaxed font-medium">{text}</p>
+              <p class="text-slate-600 leading-relaxed font-medium">{text}</p>
             </div>
           ))
         }
       </div>
     </section>
 
-    {/* Login to Your Account */}
-    <section class="space-y-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
+    <section class="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
       <div class="flex items-center gap-4 mb-4">
         <LogIn className="w-7 h-7 text-emerald-600" />
-        <h3 class="text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">Login to Your Account</h3>
+        <h3 class="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">
+          Login to Your Account
+        </h3>
       </div>
       <div class="space-y-6">
         {
@@ -78,7 +80,7 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
               <div class="w-7 h-7 bg-emerald-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
                 {i + 1}
               </div>
-              <p class="text-sm text-slate-600 leading-relaxed font-medium">{text}</p>
+              <p class="text-slate-600 leading-relaxed font-medium">{text}</p>
             </div>
           ))
         }
@@ -86,11 +88,10 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
     </section>
   </div>
 
-  {/* 3. Join a Conference as an Author */}
   <section class="space-y-12">
     <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
       <UserCheck className="w-8 h-8 text-emerald-600" />
-      <h2 class="text-3xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+      <h2 class="text-xl md:text-2xl lg:text-3xl font-black text-emerald-950 tracking-tighter uppercase">
         Join a Conference as an Author
       </h2>
     </div>
@@ -106,7 +107,7 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
             "The conference team will contact you regarding your submission via your registered email.",
           ].map((text, i) => (
             <div class="space-y-4">
-              <div class="text-emerald-500 font-black text-4xl opacity-20">0{i + 1}</div>
+              <div class="text-emerald-500 font-black text-4xl opacity-30">0{i + 1}</div>
               <p class="text-sm font-medium leading-relaxed text-emerald-100/70">{text}</p>
             </div>
           ))
@@ -115,14 +116,13 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
     </div>
   </section>
 
-  {/* Templates & Ethical Notice */}
   <div class="space-y-10">
     <div class="flex items-center gap-4">
       <FileCode className="w-6 h-6 text-emerald-600" />
-      <h3 class="text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">Template Resources</h3>
+      <h3 class="text-xl md:text-2xl font-black text-emerald-950 tracking-tighter uppercase">Template Resources</h3>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-6">
+    <div class="grid sm:grid-cols-2 gap-4">
       <a
         href="#"
         class="flex items-center justify-between p-8 bg-white border border-slate-200 rounded-3xl hover:border-emerald-500 hover:shadow-xl transition-all group"

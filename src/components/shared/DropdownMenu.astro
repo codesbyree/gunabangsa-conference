@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  links: Array<{ href: string; label: string }>;
+}
+const { title, links } = Astro.props;
+---
+
+<div class="relative group/dropdown">
+  <button
+    class="hover:text-emerald-400 transition uppercase tracking-widest flex items-center gap-1 group-hover/dropdown:text-emerald-400"
+  >
+    {title}
+    <svg
+      class="w-4 h-4 transition-transform group-hover/dropdown:rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      ><polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+  </button>
+
+  <div
+    class="absolute top-full left-0 pt-4 w-72 hidden group-hover/dropdown:block animate-in fade-in slide-in-from-top-2 duration-200"
+  >
+    <div class="bg-emerald-950 border border-white/10 rounded-2xl overflow-hidden shadow-2xl py-2">
+      {
+        links.map((link, index) => (
+          <a
+            href={link.href}
+            class={`block w-full text-left px-6 py-3 text-sm font-bold text-emerald-100/70 hover:bg-emerald-500 hover:text-emerald-950 transition-colors ${
+              index !== links.length - 1 ? "border-b border-white/5" : ""
+            }`}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</div>
