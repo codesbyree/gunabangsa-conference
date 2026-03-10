@@ -1,8 +1,9 @@
 ---
 import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } from "lucide-react";
+import NumberedList from "../shared/NumberedList.astro";
 ---
 
-<div class="max-w-6xl mx-auto px-6 py-24 space-y-20">
+<div class="max-w-7xl mx-auto px-6 py-24 space-y-10">
   <section class="space-y-12">
     <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
       <FileCode className="w-8 h-8 text-emerald-600" />
@@ -10,27 +11,19 @@ import { FileCode, UserPlus, LogIn, UserCheck, Search, Download, ShieldCheck } f
         Preparing Article Submission
       </h2>
     </div>
-    <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 lg:gap-x-15">
-      {
-        [
-          "Ensure that the manuscript aligns with the scope and topics of the conference.",
-          "Titles must be representative of the article content and should not exceed 18 words.",
-          "Abstracts should be between 150 and 250 words.",
-          "The manuscript should include: Introduction, Methods, Results, Discussion, Conclusion, and References.",
-          "Submissions must be anonymous for the blind review process (no author names, email addresses, or institutional affiliations should appear in the manuscript).",
-          "No specific template format is required for the initial submission. However, files must be prepared and submitted in .doc format.",
-          "Manuscripts will be evaluated based on technical rigor, methodology soundness, clarity of results, and the validity of the conclusions drawn.",
-          "Submissions must present original research, ideas, or analysis that have not been previously published or are under consideration elsewhere. Plagiarism in any form is strictly prohibited. All manuscripts must have a similarity index of no more than 20% as verified by Turnitin or equivalent plagiarism detection software.",
-        ].map((text, i) => (
-          <div class="flex gap-6 group">
-            <div class="w-10 h-10 bg-emerald-950 rounded-lg shrink-0 flex items-center justify-center font-black text-white text-sm group-hover:bg-emerald-500 transition-colors">
-              {i + 1}
-            </div>
-            <p class="text-slate-600 leading-relaxed font-medium">{text}</p>
-          </div>
-        ))
-      }
-    </div>
+
+    <NumberedList
+      items={[
+        "Ensure that the manuscript aligns with the scope and topics of the conference.",
+        "Titles must be representative of the article content and should not exceed 18 words.",
+        "Abstracts should be between 150 and 250 words.",
+        "The manuscript should include: Introduction, Methods, Results, Discussion, Conclusion, and References.",
+        "Submissions must be anonymous for the blind review process (no author names, email addresses, or institutional affiliations should appear in the manuscript).",
+        "No specific template format is required for the initial submission. However, files must be prepared and submitted in .doc format.",
+        "Manuscripts will be evaluated based on technical rigor, methodology soundness, clarity of results, and the validity of the conclusions drawn.",
+        "Submissions must present original research, ideas, or analysis that have not been previously published or are under consideration elsewhere. Plagiarism in any form is strictly prohibited. All manuscripts must have a similarity index of no more than 20% as verified by Turnitin or equivalent plagiarism detection software.",
+      ]}
+    />
   </section>
 
   <div class="grid lg:grid-cols-2 gap-4">

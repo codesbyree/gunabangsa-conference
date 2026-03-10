@@ -140,7 +140,7 @@ export const DEADLINES = [
   { event: "Conference Day", description: "Join us for three days of insightful presentations, discussions, and networking.", date: "November 5-7, 2026", status: "Event" }
 ];
 
-export const PRICING_SECTIONS = [
+export const REGULAR_PRICING = [
   {
     title: "Online Participation",
     columns: 4,
@@ -207,6 +207,64 @@ export const PRICING_SECTIONS = [
       }
     ]
   }
+];
+
+export const COMBINED_PRICING = [
+  {
+    title: "Online Participation",
+    columns: 2,
+    tiers: [
+      {
+        name: "Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 450 / IDR 7.500.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 475 / IDR 7.850.000" }
+      },
+      {
+        name: "Student Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 425 / IDR 7.050.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 450 / IDR 7.500.000" }
+      },
+    ]
+  },
+  {
+    title: "Onsite Participation (Istanbul, Turkiye)",
+    columns: 2,
+    tiers: [
+      {
+        name: "Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 500 / IDR 8.250.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 525 / IDR 8.750.000" }
+      },
+      {
+        name: "Student Presenter",
+        subtitle: "(1 Presenter)",
+        earlyBird: { date: "until Sep 30, 2026", price: "USD 475 / IDR 7.850.000" },
+        regular: { date: "Oct 1–30, 2026", price: "USD 500 / IDR 8.250.000" }
+      },
+    ]
+  }
+];
+
+export const NPU_PRICING = [
+  {
+    title: "",
+    columns: 2,
+    tiers: [
+      {
+        name: "Participant",
+        subtitle: "",
+        regular: { date: "", price: "IDR 250.000" },
+      },
+      {
+        name: "Presenter and Publication",
+        subtitle: "(1 Presenter)",
+        regular: { date: "", price: "IDR 4.000.000" },
+      },
+    ]
+  },
 ];
 
 export const SCHEDULE = [

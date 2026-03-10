@@ -23,7 +23,7 @@ const moreInfoLinks = [
 
 <nav class="fixed top-6 left-0 right-0 z-50 px-4" id="main-nav">
   <div
-    class="max-w-6xl mx-auto bg-emerald-950/90 backdrop-blur-xl border border-white/10 rounded-full h-16 flex items-center justify-between px-6 pr-4 shadow-2xl shadow-emerald-950/20"
+    class="max-w-7xl mx-auto bg-emerald-950/90 backdrop-blur-xl border border-white/10 rounded-full h-16 flex items-center justify-between px-6 pr-4 shadow-2xl shadow-emerald-950/20"
   >
     <a href="/" class="flex items-center gap-3 group">
       <div
@@ -34,20 +34,13 @@ const moreInfoLinks = [
       <span class="font-extrabold text-white tracking-tighter text-xl uppercase">HEALTHMED-IC</span>
     </a>
 
-    <div class="hidden md:flex items-center gap-8 text-sm font-bold tracking-tight text-emerald-100/70">
+    <div class="hidden md:flex items-center gap-5 text-sm font-bold tracking-tight text-emerald-100/70">
       <NavLink href="/" active={currentPath === "/"}>HOME</NavLink>
       <NavLink href="/venue" active={currentPath === "/venue"}>VENUE</NavLink>
       <NavLink href="/committee" active={currentPath === "/committee"}>COMMITTEE</NavLink>
-
+      <NavLink href="/registration" active={currentPath === "/registration"}>Registrations</NavLink>
       <Dropdown title="Author Information" links={authorLinks} />
       <Dropdown title="More Information" links={moreInfoLinks} />
-
-      <a
-        href="/#pricing"
-        class="bg-emerald-500 text-emerald-950 px-5 py-2 rounded-full hover:bg-emerald-400 transition uppercase tracking-widest"
-      >
-        REGISTER
-      </a>
     </div>
 
     <button id="menu-toggle" class="md:hidden text-white" aria-label="Toggle Menu">

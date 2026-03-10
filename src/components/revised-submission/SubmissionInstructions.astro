@@ -1,8 +1,9 @@
 ---
 import { FileCode, Search, ShieldCheck, Download } from "lucide-react";
+import NumberedList from "../shared/NumberedList.astro";
 ---
 
-<div class="max-w-6xl mx-auto px-6 py-24 space-y-20">
+<div class="max-w-7xl mx-auto px-6 py-24 space-y-10">
   <section class="space-y-8">
     <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
       <FileCode className="w-8 h-8 text-emerald-600" />
@@ -31,23 +32,14 @@ import { FileCode, Search, ShieldCheck, Download } from "lucide-react";
       When preparing your revised submission for the final review, please ensure the following:
     </p>
 
-    <div class="grid md:grid-cols-2 gap-x-4 gap-y-4 md:gap-x-6 md:gap-y-6 lg:gap-x-15">
-      {
-        [
-          "Two files must be submitted through the IGERS system: The Final Camera-Ready Manuscript (revised article) in .doc format and the Response to Reviewers document in .pdf format.",
-          "Instructions for preparing the final camera-ready manuscript can be found in the Final Camera-Ready Guidelines.",
-          "Respond directly to reviewer comments in the comment field of the IGERS system.",
-          "Carefully proofread your manuscript for spelling, grammar, and formatting errors before submission.",
-        ].map((text, i) => (
-          <div class="flex gap-6 group">
-            <div class="w-10 h-10 bg-emerald-950 rounded-lg shrink-0 flex items-center justify-center font-black text-white text-sm group-hover:bg-emerald-500 transition-colors">
-              {i + 1}
-            </div>
-            <p class="text-slate-600 leading-relaxed font-medium">{text}</p>
-          </div>
-        ))
-      }
-    </div>
+    <NumberedList
+      items={[
+        "Two files must be submitted through the IGERS system: The Final Camera-Ready Manuscript (revised article) in .doc format and the Response to Reviewers document in .pdf format.",
+        "Instructions for preparing the final camera-ready manuscript can be found in the Final Camera-Ready Guidelines.",
+        "Respond directly to reviewer comments in the comment field of the IGERS system.",
+        "Carefully proofread your manuscript for spelling, grammar, and formatting errors before submission.",
+      ]}
+    />
   </section>
 
   <div class="space-y-10">

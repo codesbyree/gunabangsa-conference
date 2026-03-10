@@ -1,8 +1,9 @@
 ---
 import { FileCode, ShieldCheck, Download, Mail, UserCheck, Phone } from "lucide-react";
+import NumberedList from "../shared/NumberedList.astro";
 ---
 
-<div class="max-w-6xl mx-auto px-6 py-24 space-y-24">
+<div class="max-w-7xl mx-auto px-6 py-24 space-y-24">
   {/* Introduction Section */}
   <section class="space-y-8">
     <div class="flex items-center gap-4 border-b border-slate-100 pb-8">
@@ -11,13 +12,13 @@ import { FileCode, ShieldCheck, Download, Mail, UserCheck, Phone } from "lucide-
         Final Camera-Ready Submission Instructions
       </h2>
     </div>
-    <div class="bg-emerald-50/50 p-8 rounded-3xl border border-emerald-100/50">
-      <p class="text-lg text-slate-700 leading-relaxed font-medium mb-4">
+    <div class="bg-emerald-100 p-8 rounded-3xl border border-emerald-200">
+      <p class="text-slate-700 leading-relaxed font-medium mb-4">
         All manuscripts identified as requiring revision will undergo a subsequent review process. Authors are expected
         to prepare a clean <strong>Revised Manuscript</strong> and a separate <strong>Response to Reviewers</strong> document,
         clearly outlining how each reviewer’s comment has been addressed.
       </p>
-      <p class="text-lg text-slate-700 leading-relaxed font-medium">
+      <p class="text-slate-700 leading-relaxed font-medium">
         After completing all revisions, all accepted papers must be prepared as a <strong
           >Final Camera-Ready Manuscript</strong
         >. This is the final step in the submission process, required after your paper has been officially accepted for
@@ -35,29 +36,20 @@ import { FileCode, ShieldCheck, Download, Mail, UserCheck, Phone } from "lucide-
       </h3>
     </div>
 
-    <p class="text-sm text-slate-600 leading-relaxed font-medium mb-8">
+    <p class="text-slate-600 leading-relaxed font-medium mb-8">
       In preparing the Final Camera-Ready Manuscript, please ensure the following:
     </p>
 
-    <div class="grid md:grid-cols-2 gap-x-12 gap-y-10">
-      {
-        [
-          "The Final Camera-Ready Manuscript must include author names, affiliations, and email addresses (as required by the publisher’s template).",
-          "Strictly follow the writing instructions provided in the publisher’s template (from title to references).",
-          "Use clear and high-resolution figures; avoid or replace any blurred images.",
-          "If figures are reproduced from other sources, the corresponding copyright permission form must be provided for each figure.",
-          "Use a reference management tool (e.g., Mendeley, Zotero) to minimize formatting errors in the references section.",
-          "The prepared Final Camera-Ready Manuscript, along with all required documents, must then be resubmitted through the IGERS system.",
-        ].map((text, i) => (
-          <div class="flex gap-6 group">
-            <div class="w-10 h-10 bg-emerald-950 rounded-lg shrink-0 flex items-center justify-center font-black text-white text-sm group-hover:bg-emerald-500 transition-colors">
-              {i + 1}
-            </div>
-            <p class="text-sm text-slate-600 leading-relaxed font-medium">{text}</p>
-          </div>
-        ))
-      }
-    </div>
+    <NumberedList
+      items={[
+        "The Final Camera-Ready Manuscript must include author names, affiliations, and email addresses (as required by the publisher’s template).",
+        "Strictly follow the writing instructions provided in the publisher’s template (from title to references).",
+        "Use clear and high-resolution figures; avoid or replace any blurred images.",
+        "If figures are reproduced from other sources, the corresponding copyright permission form must be provided for each figure.",
+        "Use a reference management tool (e.g., Mendeley, Zotero) to minimize formatting errors in the references section.",
+        "The prepared Final Camera-Ready Manuscript, along with all required documents, must then be resubmitted through the IGERS system.",
+      ]}
+    />
   </section>
 
   {/* Formatting and Editing Assistance Section */}
@@ -102,7 +94,7 @@ import { FileCode, ShieldCheck, Download, Mail, UserCheck, Phone } from "lucide-
       <h3 class="text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">Template Resources</h3>
     </div>
 
-    <div class="grid sm:grid-cols-2 gap-6">
+    <div class="grid sm:grid-cols-2 gap-4">
       <a
         href="#"
         class="flex items-center justify-between p-8 bg-white border border-slate-200 rounded-3xl hover:border-emerald-500 hover:shadow-xl transition-all group"
