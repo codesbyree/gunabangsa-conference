@@ -1,15 +1,16 @@
 import { motion } from 'framer-motion';
 
 export default function OrganizersPartners() {
-  const logoPlaceholder = (size: 'lg' | 'md' | 'sm', label: string) => {
+  const logoPlaceholder = (size: 'lg' | 'md' | 'sm', label: string, sublabel?: string) => {
     const sizeMap = {
       lg: 'w-48 h-24',
       md: 'w-40 h-20',
       sm: 'w-32 h-16',
     };
     return (
-      <div className={`${sizeMap[size]} bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300 shadow-sm hover:shadow-md`}>
-        <div className="text-slate-400 font-bold uppercase tracking-wider text-sm text-center">{label}</div>
+      <div className={`${sizeMap[size]} bg-slate-50 border border-slate-200 rounded-xl flex flex-col items-center justify-center p-4 grayscale hover:grayscale-0 transition-all duration-300 shadow-sm hover:shadow-md`}>
+        <div className="text-slate-400 font-bold uppercase tracking-wider text-xs text-center">{label}</div>
+        {sublabel && <div className="text-slate-300 text-[10px] text-center mt-1">{sublabel}</div>}
       </div>
     );
   };
@@ -30,12 +31,24 @@ export default function OrganizersPartners() {
           </h2>
         </motion.div>
 
-        {/* Organizers */}
+        {/* Host */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center text-slate-800 mb-10 tracking-tight">Organizers</h3>
+          <h3 className="text-2xl font-bold text-center text-slate-800 mb-10 tracking-tight">Host</h3>
           <div className="flex flex-wrap justify-center gap-12 items-center">
-            {logoPlaceholder('lg', 'Organizer Logo')}
-            {logoPlaceholder('lg', 'Organizer Logo')}
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-56 h-28 bg-emerald-50 border-2 border-emerald-200 rounded-xl flex flex-col items-center justify-center p-4 shadow-md">
+                <div className="text-emerald-700 font-black uppercase tracking-wider text-sm text-center leading-tight">
+                  STIKES Guna Bangsa
+                </div>
+                <div className="text-emerald-500 text-xs text-center mt-1 font-medium">Yogyakarta, Indonesia</div>
+              </div>
+            </div>
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-56 h-28 bg-slate-50 border-2 border-dashed border-slate-300 rounded-xl flex flex-col items-center justify-center p-4 shadow-sm">
+                <div className="text-slate-400 font-bold uppercase tracking-wider text-xs text-center">Co-Host</div>
+                <div className="text-slate-300 text-[10px] text-center mt-1">To be announced</div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -43,9 +56,9 @@ export default function OrganizersPartners() {
         <div className="mb-20">
           <h3 className="text-2xl font-bold text-center text-slate-800 mb-10 tracking-tight">Supporters</h3>
           <div className="flex flex-wrap justify-center gap-12 items-center">
-            {logoPlaceholder('md', 'Supporter Logo')}
-            {logoPlaceholder('md', 'Supporter Logo')}
-            {logoPlaceholder('md', 'Supporter Logo')}
+            {logoPlaceholder('md', 'Supporter', 'To be announced')}
+            {logoPlaceholder('md', 'Supporter', 'To be announced')}
+            {logoPlaceholder('md', 'Supporter', 'To be announced')}
           </div>
         </div>
 
