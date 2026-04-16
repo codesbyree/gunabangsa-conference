@@ -99,11 +99,12 @@ export default function Hero() {
         >
           <Link
             to="/initial-submission"
-            className="px-8 py-4 bg-emerald-500 text-emerald-950 font-black text-[10px] uppercase tracking-widest rounded-md hover:bg-emerald-400 transition shadow-2xl shadow-emerald-500/20 active:scale-95"
+            className="px-8 py-4 bg-emerald-500 text-emerald-950 font-black text-[10px] uppercase tracking-widest rounded-md hover:bg-emerald-400 transition shadow-2xl shadow-emerald-500/20 active:scale-95 flex items-center justify-center"
           >
             Submit Your Abstract
           </Link>
-          <button className="px-10 py-5 border border-white/20 text-white font-black text-[10px] uppercase tracking-widest rounded-md hover:bg-white/5 transition active:scale-95">
+
+          <button className="px-10 py-5 border border-white/20 text-white font-black text-[10px] uppercase tracking-widest rounded-md hover:bg-white/5 transition active:scale-95 flex items-center justify-center">
             Download Guidelines
           </button>
         </motion.div>

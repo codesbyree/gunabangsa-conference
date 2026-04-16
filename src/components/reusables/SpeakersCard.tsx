@@ -7,6 +7,7 @@ interface SpeakersCardProps {
   bio: string;
   topic: string;
   sessionDate: string;
+  image: string;
 }
 
 export default function SpeakersCard({
@@ -16,14 +17,22 @@ export default function SpeakersCard({
   bio,
   topic,
   sessionDate,
+  image,
 }: SpeakersCardProps) {
   return (
     <div className="group relative h-[560px] overflow-hidden rounded-xl bg-emerald-950 border border-slate-200">
-      <div className="absolute inset-0 bg-linear-to-br from-emerald-900/50 to-emerald-950/80 transition-transform duration-700 group-hover:scale-105" />
-      <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-transparent" />
+      <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent z-20" />
+
+      {image && (
+        <img
+          src={image}
+          alt={name}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      )}
 
       {/* Default view */}
-      <div className="absolute bottom-0 left-0 p-8 z-10 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
+      <div className="absolute bottom-0 left-0 p-8 z-30 transition-all duration-500 group-hover:opacity-0 group-hover:translate-y-4">
         <h4 className="text-base font-black text-white leading-tight mb-2 tracking-tighter">
           {name}
         </h4>
