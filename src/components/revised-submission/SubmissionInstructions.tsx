@@ -21,7 +21,7 @@ export default function RevisedSubmissionInstructions() {
       <section className="space-y-8">
         <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
           <FileCode className="w-8 h-8 text-emerald-600" />
-          <h2 className="text-xl md:text-2xl lg:text-3xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+          <h2 className="text-base md:text-lg lg:text-xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
             Revised Submission Instructions
           </h2>
         </div>
@@ -85,7 +85,7 @@ export default function RevisedSubmissionInstructions() {
           </div>
           <div className="relative z-10">
             <h4 className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">Submission Ethics</h4>
-            <p className="text-2xl font-bold mb-6 leading-tight max-w-2xl">
+            <p className="text-base font-bold mb-4 leading-tight max-w-2xl">
               Double-blind peer review is mandatory for all tracks.
             </p>
             <p className="text-sm text-slate-400 font-medium leading-relaxed max-w-xl">

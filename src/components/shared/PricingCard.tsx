@@ -1,4 +1,4 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight } from "lucide-react";
 
 interface PricingTier {
   date?: string;
@@ -14,7 +14,7 @@ interface PricingCardProps {
 }
 
 export default function PricingCard({
-  cardTitle = '',
+  cardTitle = "",
   cardSubtitle,
   cardEarlyBird,
   cardRegular,
@@ -35,20 +35,24 @@ export default function PricingCard({
         <div className="flex flex-col gap-5 bg-white/10 p-2 rounded-lg mt-10">
           {cardEarlyBird && (
             <div>
-              <p className="text-xs font-medium text-slate-600 mb-2">Early Bird ({cardEarlyBird.date})</p>
+              <p className="text-xs font-medium text-slate-600 mb-2">
+                Early Bird ({cardEarlyBird.date})
+              </p>
               <p className="font-bold text-slate-900">{cardEarlyBird.price}</p>
             </div>
           )}
           {cardRegular && (
             <div>
-              <p className="text-xs font-medium text-slate-600 mb-2">{`Regular ${cardRegular.date ? `(${cardRegular.date})` : ''}`}</p>
+              <p className="text-xs font-medium text-slate-600 mb-2">{`Regular ${cardRegular.date ? `(${cardRegular.date})` : ""}`}</p>
               <p className="font-bold text-slate-900">{cardRegular.price}</p>
             </div>
           )}
         </div>
 
         {cardDescription && (
-          <p className="text-xs font-bold text-slate-900 mt-2 mb-4">{cardDescription}</p>
+          <p className="text-xs font-bold text-slate-900 mt-2 mb-4">
+            {cardDescription}
+          </p>
         )}
       </div>
 
@@ -56,7 +60,7 @@ export default function PricingCard({
         href="https://igers.org"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full text-left flex items-center gap-4 justify-between text-sm bg-gradient-to-br from-emerald-800 via-emerald-900 to-emerald-950 text-emerald-50 rounded-xl p-2 cursor-pointer border border-dashed border-emerald-500 hover:opacity-90 transition-opacity shadow-md"
+        className="w-full text-left flex items-center gap-4 justify-between text-sm bg-linear-to-br from-emerald-800 via-emerald-900 to-emerald-950 text-emerald-50 rounded-xl p-2 cursor-pointer border border-dashed border-emerald-500 hover:opacity-90 transition-opacity shadow-md"
       >
         <span>Register Here</span>
         <ArrowRight />

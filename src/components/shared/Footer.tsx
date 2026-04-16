@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-8">
                 <div className="w-8 h-8 bg-emerald-900 rounded flex items-center justify-center font-bold text-white italic">H</div>
-                <span className="font-extrabold text-white tracking-tighter text-2xl">HEALTHMED-IC</span>
+                <span className="font-extrabold text-white tracking-tighter text-xl">HEALTHMED-IC</span>
               </div>
               <p className="text-emerald-100/70 text-sm font-medium leading-relaxed max-w-sm mb-10">
                 The 1st HEALTHMED-IC is an international scientific conference hosted by{' '}
@@ -39,8 +39,8 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-xl font-bold text-slate-50 mb-8 tracking-tight">Quick Actions</h4>
-              <ul className="space-y-5 text-[15px] font-medium">
+              <h4 className="text-base font-bold text-slate-50 mb-6 tracking-tight">Quick Actions</h4>
+              <ul className="space-y-4 text-sm font-medium">
                 <li><Link to="/" className="text-emerald-100/70 hover:text-emerald-100 transition">Abstract Submission</Link></li>
                 <li><Link to="/program" className="text-emerald-100/70 hover:text-emerald-100 transition">Conference Program</Link></li>
                 <li><Link to="/" className="text-emerald-100/70 hover:text-emerald-100 transition">Ethical Guidelines</Link></li>
@@ -49,8 +49,8 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="text-xl font-bold text-slate-50 mb-8 tracking-tight">Contact</h4>
-              <div className="space-y-5 text-[15px] font-medium">
+              <h4 className="text-base font-bold text-slate-50 mb-6 tracking-tight">Contact</h4>
+              <div className="space-y-4 text-sm font-medium">
                 <a href="tel:0000000000" className="flex items-center gap-4 text-emerald-100/70 hover:text-emerald-100 transition">
                   <PhoneIcon className="w-4 h-4 text-emerald-800" />
                   <span>(000) 000-0000</span>

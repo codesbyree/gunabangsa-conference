@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply selection:bg-emerald-500 selection:text-white;
+  @apply text-sm selection:bg-emerald-500 selection:text-white;
 }
 
 @keyframes marquee {

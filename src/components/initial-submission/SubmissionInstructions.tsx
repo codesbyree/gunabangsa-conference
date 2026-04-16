@@ -41,7 +41,7 @@ export default function SubmissionInstructions() {
         <section className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
           <div className="flex items-center gap-4 mb-4">
             <UserPlus className="w-7 h-7 text-emerald-600" />
-            <h3 className="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">Creating an Account</h3>
+            <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">Creating an Account</h3>
           </div>
           <NumberedSteps items={[
             "Go to the portal login page or click the 'Login' button in the top-right corner of the homepage.",
@@ -54,7 +54,7 @@ export default function SubmissionInstructions() {
         <section className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
           <div className="flex items-center gap-4 mb-4">
             <LogIn className="w-7 h-7 text-emerald-600" />
-            <h3 className="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">Login to Your Account</h3>
+            <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">Login to Your Account</h3>
           </div>
           <NumberedSteps items={[
             'Navigate to the official submission portal login page.',
@@ -93,7 +93,7 @@ export default function SubmissionInstructions() {
       <div className="space-y-10">
         <div className="flex items-center gap-4">
           <FileCode className="w-6 h-6 text-emerald-600" />
-          <h3 className="text-xl md:text-2xl font-black text-emerald-950 tracking-tighter uppercase">Template Resources</h3>
+          <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase">Template Resources</h3>
         </div>
         <div className="grid sm:grid-cols-2 gap-4">
           {[
@@ -121,7 +121,7 @@ export default function SubmissionInstructions() {
           </div>
           <div className="relative z-10">
             <h4 className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">Submission Ethics</h4>
-            <p className="text-2xl font-bold mb-6 leading-tight max-w-2xl">
+            <p className="text-base font-bold mb-4 leading-tight max-w-2xl">
               Double-blind peer review is mandatory for all tracks.
             </p>
             <p className="text-sm text-slate-400 font-medium leading-relaxed max-w-xl">

@@ -34,7 +34,7 @@ export default function FaqPage() {
             transition={{ duration: 0.4, delay: idx * 0.1 }}
             className="bg-slate-50 border border-slate-100 rounded-2xl p-6 shadow-xl shadow-emerald-950/5"
           >
-            <h3 className="text-xl font-bold text-emerald-950 mb-3 tracking-tight">{faq.q}</h3>
+            <h3 className="text-sm font-bold text-emerald-950 mb-2 tracking-tight">{faq.q}</h3>
             <p className="text-slate-600 leading-relaxed font-medium">{faq.a}</p>
           </motion.div>
         ))}
