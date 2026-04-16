@@ -1,6 +1,13 @@
-import { 
-  Stethoscope, Cpu, Database, Pill, Globe, Leaf, Users, Brain 
-} from 'lucide-react';
+import {
+  Stethoscope,
+  Cpu,
+  Database,
+  Pill,
+  Globe,
+  Leaf,
+  Users,
+  Brain,
+} from "lucide-react";
 
 export const SCOPES = [
   {
@@ -12,8 +19,8 @@ export const SCOPES = [
       "Clinical case studies & clinical trials",
       "Diagnostics and therapeutic advancements",
       "Evidence-based medical practice",
-      "Emergency & critical care medicine"
-    ]
+      "Emergency & critical care medicine",
+    ],
   },
   {
     id: 2,
@@ -25,8 +32,8 @@ export const SCOPES = [
       "Biomechanics & biomaterials",
       "Rehabilitation engineering",
       "Wearable health monitoring devices",
-      "Biomedical signal & image processing"
-    ]
+      "Biomedical signal & image processing",
+    ],
   },
   {
     id: 3,
@@ -37,8 +44,8 @@ export const SCOPES = [
       "Machine learning in clinical decision support",
       "Electronic medical records (EMR) & health information systems",
       "Telemedicine & remote patient monitoring",
-      "Medical data analytics and big data in health"
-    ]
+      "Medical data analytics and big data in health",
+    ],
   },
   {
     id: 4,
@@ -49,8 +56,8 @@ export const SCOPES = [
       "Pharmacology & toxicology",
       "Pharmacokinetics and pharmacodynamics",
       "Pharmaceutical technology",
-      "Herbal & traditional medicine evaluation"
-    ]
+      "Herbal & traditional medicine evaluation",
+    ],
   },
   {
     id: 5,
@@ -62,8 +69,8 @@ export const SCOPES = [
       "Epidemiological modeling",
       "Health promotion & disease prevention",
       "Community health and global health challenges",
-      "Nutrition science and public wellness"
-    ]
+      "Nutrition science and public wellness",
+    ],
   },
   {
     id: 6,
@@ -74,8 +81,8 @@ export const SCOPES = [
       "Water, air, and soil quality and health",
       "Waste management in healthcare facilities",
       "Sustainable medical practices",
-      "Disaster medicine & health emergency management"
-    ]
+      "Disaster medicine & health emergency management",
+    ],
   },
   {
     id: 7,
@@ -85,8 +92,8 @@ export const SCOPES = [
       "Nursing practice and innovation",
       "Midwifery practice & maternal health",
       "Physical therapy, occupational therapy, speech therapy",
-      "Clinical education and training"
-    ]
+      "Clinical education and training",
+    ],
   },
   {
     id: 8,
@@ -96,9 +103,9 @@ export const SCOPES = [
       "Mental health disorders and therapy",
       "Psychology of health and illness",
       "Stress, resilience, and well-being",
-      "Counseling strategies in healthcare"
-    ]
-  }
+      "Counseling strategies in healthcare",
+    ],
+  },
 ];
 
 export const KEYNOTE_SPEAKERS = [
@@ -108,9 +115,10 @@ export const KEYNOTE_SPEAKERS = [
     title: "Keynote Speaker",
     affiliation: "To be confirmed",
     bio: "Detailed biography and background information will be updated here soon.",
-    topic: 'To be announced',
-    sessionDate: 'Nov 5–7, 2026',
-    type: 'keynote' as const,
+    topic: "To be announced",
+    sessionDate: "Nov 5–7, 2026",
+    type: "keynote" as const,
+    image: "/assets/images/speakers/placeholder.jpg",
   },
 ];
 
@@ -121,19 +129,21 @@ export const SPEAKERS = [
     title: "Invited Speaker",
     affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
     bio: "Dr. Fitri Nadifah is a distinguished researcher and academic at STIKES Guna Bangsa Yogyakarta, contributing to advancements in biomedical and health sciences.",
-    topic: 'Healthcare Innovation & Life Sciences',
-    sessionDate: 'Nov 5–7, 2026',
-    type: 'invited' as const,
+    topic: "Healthcare Innovation & Life Sciences",
+    sessionDate: "Nov 5–7, 2026",
+    type: "invited" as const,
+    image: "/assets/images/speakers/fitri-nadifah.webp",
   },
   {
     id: 2,
-    name: "Dr. Ikrimah Nafilata, S.K.M., M.Kes(Epid)",
+    name: "Dr. Ikrimah Nafilata, S.K.M., M.Kes (Epid)",
     title: "Invited Speaker",
     affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
     bio: "Dr. Ikrimah Nafilata is an expert in epidemiology and public health at STIKES Guna Bangsa Yogyakarta, with extensive experience in health management and epidemiological research.",
-    topic: 'Epidemiology & Public Health',
-    sessionDate: 'Nov 5–7, 2026',
-    type: 'invited' as const,
+    topic: "Epidemiology & Public Health",
+    sessionDate: "Nov 5–7, 2026",
+    type: "invited" as const,
+    image: "/assets/images/speakers/ikrimah-nafilata.jpeg",
   },
   {
     id: 3,
@@ -141,19 +151,52 @@ export const SPEAKERS = [
     title: "Invited Speaker",
     affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
     bio: "Anita Nur Mayani specializes in radiological technology and medical imaging at STIKES Guna Bangsa Yogyakarta, with significant contributions to diagnostic imaging research.",
-    topic: 'Medical Imaging & Radiological Technology',
-    sessionDate: 'Nov 5–7, 2026',
-    type: 'invited' as const,
+    topic: "Medical Imaging & Radiological Technology",
+    sessionDate: "Nov 5–7, 2026",
+    type: "invited" as const,
+    image: "/assets/images/speakers/placeholder.jpg",
   },
 ];
 
 export const DEADLINES = [
-  { event: "Paper Submission Deadline", description: "Submit your full papers via our online submission system.", date: "July 15, 2026", status: "Open" },
-  { event: "Notification of Acceptance", description: "Authors will be notified of the review outcome.", date: "September 15, 2026", status: "Upcoming" },
-  { event: "Early Bird Registration Deadline", description: "Take advantage of discounted registration fees.", date: "September 30, 2026", status: "Upcoming" },
-  { event: "Final Camera-Ready Paper Submission", description: "Submit your final, revised papers formatted according to author guidelines.", date: "October 15, 2026", status: "Upcoming" },
-  { event: "Regular Registration Deadline", description: "Final deadline for all presenters and participants.", date: "October 30, 2026", status: "Upcoming" },
-  { event: "Conference Day", description: "Join us for three days of insightful presentations, discussions, and networking.", date: "November 5-7, 2026", status: "Event" }
+  {
+    event: "Paper Submission Deadline",
+    description: "Submit your full papers via our online submission system.",
+    date: "July 15, 2026",
+    status: "Open",
+  },
+  {
+    event: "Notification of Acceptance",
+    description: "Authors will be notified of the review outcome.",
+    date: "September 15, 2026",
+    status: "Upcoming",
+  },
+  {
+    event: "Early Bird Registration Deadline",
+    description: "Take advantage of discounted registration fees.",
+    date: "September 30, 2026",
+    status: "Upcoming",
+  },
+  {
+    event: "Final Camera-Ready Paper Submission",
+    description:
+      "Submit your final, revised papers formatted according to author guidelines.",
+    date: "October 15, 2026",
+    status: "Upcoming",
+  },
+  {
+    event: "Regular Registration Deadline",
+    description: "Final deadline for all presenters and participants.",
+    date: "October 30, 2026",
+    status: "Upcoming",
+  },
+  {
+    event: "Conference Day",
+    description:
+      "Join us for three days of insightful presentations, discussions, and networking.",
+    date: "November 5-7, 2026",
+    status: "Event",
+  },
 ];
 
 export const REGULAR_PRICING = [
@@ -164,26 +207,38 @@ export const REGULAR_PRICING = [
       {
         name: "Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 75 / IDR 1.250.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 100 / IDR 1.750.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 75 / IDR 1.250.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 100 / IDR 1.750.000" },
       },
       {
         name: "Student Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 50 / IDR 850.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 75 / IDR 1.250.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 50 / IDR 850.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 75 / IDR 1.250.000" },
       },
       {
         name: "Participant",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 50 / IDR 850.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 75 / IDR 1.250.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 50 / IDR 850.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 75 / IDR 1.250.000" },
       },
       {
         name: "Student Participant",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 30 / IDR 500.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 50 / IDR 850.000" }
-      }
-    ]
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 30 / IDR 500.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 50 / IDR 850.000" },
+      },
+    ],
   },
   {
     title: "Onsite Participation (Istanbul, Turkiye)",
@@ -192,26 +247,38 @@ export const REGULAR_PRICING = [
       {
         name: "Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 125 / IDR 2.250.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 175 / IDR 3.000.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 125 / IDR 2.250.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 175 / IDR 3.000.000" },
       },
       {
         name: "Student Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 100 / IDR 1.750.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 125 / IDR 2.250.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 100 / IDR 1.750.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 125 / IDR 2.250.000" },
       },
       {
         name: "Participant",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 100 / IDR 1.750.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 125 / IDR 2.250.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 100 / IDR 1.750.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 125 / IDR 2.250.000" },
       },
       {
         name: "Student Participant",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 75 / IDR 1.250.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 100 / IDR 1.750.000" }
-      }
-    ]
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 75 / IDR 1.250.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 100 / IDR 1.750.000" },
+      },
+    ],
   },
   {
     title: "Publication Fee",
@@ -219,10 +286,10 @@ export const REGULAR_PRICING = [
     tiers: [
       {
         name: "Journal",
-        description: "At Cost (depending on publisher)"
-      }
-    ]
-  }
+        description: "At Cost (depending on publisher)",
+      },
+    ],
+  },
 ];
 
 export const COMBINED_PRICING = [
@@ -233,16 +300,22 @@ export const COMBINED_PRICING = [
       {
         name: "Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 450 / IDR 7.500.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 475 / IDR 7.850.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 450 / IDR 7.500.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 475 / IDR 7.850.000" },
       },
       {
         name: "Student Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 425 / IDR 7.050.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 450 / IDR 7.500.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 425 / IDR 7.050.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 450 / IDR 7.500.000" },
       },
-    ]
+    ],
   },
   {
     title: "Onsite Participation (Istanbul, Turkiye)",
@@ -251,17 +324,23 @@ export const COMBINED_PRICING = [
       {
         name: "Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 500 / IDR 8.250.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 525 / IDR 8.750.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 500 / IDR 8.250.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 525 / IDR 8.750.000" },
       },
       {
         name: "Student Presenter",
         subtitle: "(1 Presenter)",
-        earlyBird: { date: "until Sep 30, 2026", price: "USD 475 / IDR 7.850.000" },
-        regular: { date: "Oct 1–30, 2026", price: "USD 500 / IDR 8.250.000" }
+        earlyBird: {
+          date: "until Sep 30, 2026",
+          price: "USD 475 / IDR 7.850.000",
+        },
+        regular: { date: "Oct 1–30, 2026", price: "USD 500 / IDR 8.250.000" },
       },
-    ]
-  }
+    ],
+  },
 ];
 
 export const NPU_PRICING = [
@@ -279,18 +358,50 @@ export const NPU_PRICING = [
         subtitle: "(1 Presenter)",
         regular: { date: "", price: "IDR 4.000.000" },
       },
-    ]
+    ],
   },
 ];
 
 export const SCHEDULE = [
-  { time: "08:00 - 09:00", activity: "Registration & Morning Refreshments", type: "General" },
-  { time: "09:00 - 09:30", activity: "Inaugural Ceremony & Opening Address", type: "Ceremony" },
-  { time: "09:30 - 10:30", activity: "Keynote: AI in Modern Clinical Decision Making", type: "Keynote" },
-  { time: "10:30 - 11:00", activity: "Networking Coffee Break & Poster Session", type: "Networking" },
-  { time: "11:00 - 13:00", activity: "Parallel Track A: Biomedical Engineering Advancements", type: "Scientific" },
+  {
+    time: "08:00 - 09:00",
+    activity: "Registration & Morning Refreshments",
+    type: "General",
+  },
+  {
+    time: "09:00 - 09:30",
+    activity: "Inaugural Ceremony & Opening Address",
+    type: "Ceremony",
+  },
+  {
+    time: "09:30 - 10:30",
+    activity: "Keynote: AI in Modern Clinical Decision Making",
+    type: "Keynote",
+  },
+  {
+    time: "10:30 - 11:00",
+    activity: "Networking Coffee Break & Poster Session",
+    type: "Networking",
+  },
+  {
+    time: "11:00 - 13:00",
+    activity: "Parallel Track A: Biomedical Engineering Advancements",
+    type: "Scientific",
+  },
   { time: "13:00 - 14:00", activity: "Networking Lunch", type: "General" },
-  { time: "14:00 - 16:00", activity: "Parallel Track B: Pharmaceutical Innovation & Clinical Trials", type: "Scientific" },
-  { time: "16:00 - 16:30", activity: "Afternoon Tea & Innovation Showcases", type: "Networking" },
-  { time: "16:30 - 18:00", activity: "Panel Discussion: The Future of Global Health Ethics", type: "Scientific" },
+  {
+    time: "14:00 - 16:00",
+    activity: "Parallel Track B: Pharmaceutical Innovation & Clinical Trials",
+    type: "Scientific",
+  },
+  {
+    time: "16:00 - 16:30",
+    activity: "Afternoon Tea & Innovation Showcases",
+    type: "Networking",
+  },
+  {
+    time: "16:30 - 18:00",
+    activity: "Panel Discussion: The Future of Global Health Ethics",
+    type: "Scientific",
+  },
 ];

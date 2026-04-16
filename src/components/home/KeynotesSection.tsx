@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import { SPEAKERS, KEYNOTE_SPEAKERS } from '../../data/constants';
-import SpeakersCard from '../reusables/SpeakersCard';
+import { motion } from "framer-motion";
+import { SPEAKERS, KEYNOTE_SPEAKERS } from "../../data/constants";
+import SpeakersCard from "../reusables/SpeakersCard";
 
 export default function KeynotesSection() {
   return (
@@ -13,7 +13,9 @@ export default function KeynotesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">Speakers</h2>
+          <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">
+            Speakers
+          </h2>
           <div className="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full" />
         </motion.div>
 
@@ -47,6 +49,7 @@ export default function KeynotesSection() {
                   bio={speaker.bio}
                   topic={speaker.topic}
                   sessionDate={speaker.sessionDate}
+                  image={speaker.image}
                 />
               </motion.div>
             ))}
@@ -82,6 +85,7 @@ export default function KeynotesSection() {
                   bio={speaker.bio}
                   topic={speaker.topic}
                   sessionDate={speaker.sessionDate}
+                  image={speaker.image}
                 />
               </motion.div>
             ))}
