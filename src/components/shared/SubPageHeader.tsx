@@ -25,7 +25,7 @@ export default function SubPageHeader({ title }: SubPageHeaderProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-black text-emerald-950 mb-6 tracking-tighter uppercase leading-tight"
+          className="text-xl md:text-2xl lg:text-3xl font-black text-emerald-950 mb-4 tracking-tighter uppercase leading-tight"
         >
           {title}
         </motion.h1>
@@ -33,7 +33,7 @@ export default function SubPageHeader({ title }: SubPageHeaderProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex items-center justify-center gap-3 text-sm font-bold tracking-tight"
+          className="flex items-center justify-center gap-3 text-xs font-bold tracking-tight"
         >
           <Link to="/" className="text-slate-400 hover:text-emerald-600 transition">Home</Link>
           <span className="text-slate-300">/</span>

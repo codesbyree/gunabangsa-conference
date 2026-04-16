@@ -32,7 +32,7 @@ export default function ProgramSchedule() {
                 <span className="text-sm font-bold text-emerald-600 font-mono tracking-tighter">{item.time}</span>
               </div>
               <div className="flex-1">
-                <h4 className="text-lg font-extrabold text-emerald-950 leading-tight group-hover:text-emerald-800 transition-colors">
+                <h4 className="text-sm font-extrabold text-emerald-950 leading-tight group-hover:text-emerald-800 transition-colors">
                   {item.activity}
                 </h4>
                 <div className="mt-2 flex items-center gap-2">

@@ -13,7 +13,7 @@ export default function KeynotesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 mb-6">Speakers</h2>
+          <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">Speakers</h2>
           <div className="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full" />
         </motion.div>
 

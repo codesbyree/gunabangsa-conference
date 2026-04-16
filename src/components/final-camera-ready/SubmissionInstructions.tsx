@@ -21,7 +21,7 @@ export default function FinalCameraReadyInstructions() {
       <section className="space-y-8">
         <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
           <FileCode className="w-8 h-8 text-emerald-600" />
-          <h2 className="text-3xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+          <h2 className="text-lg lg:text-xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
             Final Camera-Ready Submission Instructions
           </h2>
         </div>
@@ -65,7 +65,7 @@ export default function FinalCameraReadyInstructions() {
           <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center justify-between">
             <div className="flex-1 max-w-2xl">
               <h4 className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">Assistance</h4>
-              <p className="text-2xl font-bold mb-6 leading-tight">Manuscript Formatting and Editing Assistance</p>
+              <p className="text-base font-bold mb-4 leading-tight">Manuscript Formatting and Editing Assistance</p>
               <p className="text-sm text-slate-400 font-medium leading-relaxed">
                 We understand that preparing the final camera-ready manuscript can be challenging. We offer a professional
                 formatting and editing service through our trusted partner.
@@ -91,7 +91,7 @@ export default function FinalCameraReadyInstructions() {
       <div className="space-y-10">
         <div className="flex items-center gap-4">
           <FileCode className="w-6 h-6 text-emerald-600" />
-          <h3 className="text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">Template Resources</h3>
+          <h3 className="text-base lg:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">Template Resources</h3>
         </div>
         <div className="grid sm:grid-cols-2 gap-4">
           {[

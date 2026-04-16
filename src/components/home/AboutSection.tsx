@@ -22,7 +22,7 @@ export default function AboutSection() {
         >
           <div className="lg:col-span-8">
             <div className="text-emerald-600 text-xs font-black uppercase tracking-[0.4em] mb-4">Invitation</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 leading-tight">
+            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 leading-tight">
               Welcome to The 1st HEALTHMED-IC
             </h2>
           </div>
@@ -43,7 +43,7 @@ export default function AboutSection() {
           className="mb-12 p-6 rounded-2xl bg-emerald-50 border border-emerald-200"
         >
           <p className="text-emerald-600 text-[10px] font-black uppercase tracking-[0.3em] mb-2">Conference Theme</p>
-          <p className="text-emerald-950 font-bold text-lg leading-snug">
+          <p className="text-emerald-950 font-bold text-sm leading-snug">
             "Innovating Healthcare Excellence: Integrating Advanced Life Treatment and Human-Centered Medicine for a Sustainable Future"
           </p>
         </motion.div>

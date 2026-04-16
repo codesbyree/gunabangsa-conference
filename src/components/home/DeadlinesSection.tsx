@@ -17,7 +17,7 @@ export default function DeadlinesSection() {
           className="text-center mb-16"
         >
           <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">Timeline</div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Submission Deadlines</h2>
+          <h2 className="text-xl md:text-2xl font-extrabold text-white mb-4">Submission Deadlines</h2>
         </motion.div>
         <div className="space-y-4">
           {DEADLINES.map((item, idx) => (
@@ -34,7 +34,7 @@ export default function DeadlinesSection() {
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-lg">{item.event}</h4>
+                  <h4 className="text-white font-bold text-sm">{item.event}</h4>
                   {item.description && <p className="text-gray-400 text-sm mt-1 mb-2">{item.description}</p>}
                   <p className="text-emerald-500/50 text-xs font-bold uppercase tracking-widest">{item.date}</p>
                 </div>

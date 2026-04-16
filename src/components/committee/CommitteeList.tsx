@@ -75,7 +75,7 @@ export default function CommitteeList() {
               <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
                 <Icon className="w-6 h-6" />
               </div>
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-black text-emerald-950 tracking-tighter uppercase">
+              <h2 className="text-base md:text-lg lg:text-xl font-black text-emerald-950 tracking-tighter uppercase">
                 {section.title}
               </h2>
             </motion.div>
@@ -89,12 +89,12 @@ export default function CommitteeList() {
                   transition={{ duration: 0.4, delay: mIdx * 0.05 }}
                   className="bg-white border border-slate-200 rounded-3xl p-8 hover:border-emerald-400 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
                 >
-                  <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 font-bold text-xs tracking-widest uppercase mb-4 group-hover:bg-emerald-500 group-hover:text-emerald-950 transition-colors">
+                  <div className="inline-block px-3 py-1 rounded-full bg-slate-100 text-slate-600 font-bold text-[10px] tracking-widest uppercase mb-3 group-hover:bg-emerald-500 group-hover:text-emerald-950 transition-colors">
                     {member.role}
                   </div>
-                  <h3 className="text-lg font-bold text-emerald-950 mb-2 leading-snug">{member.name}</h3>
+                  <h3 className="text-sm font-bold text-emerald-950 mb-1 leading-snug">{member.name}</h3>
                   {member.affiliation && (
-                    <p className="text-sm text-slate-500 font-medium">{member.affiliation}</p>
+                    <p className="text-xs text-slate-500 font-medium">{member.affiliation}</p>
                   )}
                 </motion.div>
               ))}

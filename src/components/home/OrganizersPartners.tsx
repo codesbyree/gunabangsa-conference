@@ -26,7 +26,7 @@ export default function OrganizersPartners() {
           className="text-center mb-16"
         >
           <div className="text-emerald-600 text-xs font-black uppercase tracking-[0.4em] mb-4">Network</div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 leading-tight">
+          <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 leading-tight">
             Conference Organizers and Partners
           </h2>
         </motion.div>
@@ -54,7 +54,7 @@ export default function OrganizersPartners() {
 
         {/* Supporters */}
         <div className="mb-20">
-          <h3 className="text-2xl font-bold text-center text-slate-800 mb-10 tracking-tight">Supporters</h3>
+          <h3 className="text-base font-bold text-center text-slate-800 mb-8 tracking-tight">Supporters</h3>
           <div className="flex flex-wrap justify-center gap-12 items-center">
             {logoPlaceholder('md', 'Supporter', 'To be announced')}
             {logoPlaceholder('md', 'Supporter', 'To be announced')}
@@ -64,7 +64,7 @@ export default function OrganizersPartners() {
 
         {/* Sponsors */}
         <div>
-          <h3 className="text-2xl font-bold text-center text-slate-800 mb-10 tracking-tight">Sponsors</h3>
+          <h3 className="text-base font-bold text-center text-slate-800 mb-8 tracking-tight">Sponsors</h3>
           <div className="flex flex-wrap justify-center gap-8 items-center">
             {logoPlaceholder('sm', 'Sponsor')}
             {logoPlaceholder('sm', 'Sponsor')}

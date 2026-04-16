@@ -31,14 +31,14 @@ export default function VenuePage() {
             className="flex flex-col gap-8"
           >
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-600 font-bold text-sm tracking-widest uppercase mb-6">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 text-emerald-600 font-bold text-xs tracking-widest uppercase mb-4">
                 <MapPin className="w-4 h-4" />
                 Event Location
               </div>
-              <h2 className="text-4xl md:text-5xl font-black text-emerald-950 mb-6 tracking-tighter leading-tight">
+              <h2 className="text-xl md:text-2xl font-black text-emerald-950 mb-4 tracking-tighter leading-tight">
                 İstanbul Gelişim Üniversitesi Tower
               </h2>
-              <p className="text-lg text-slate-600 leading-relaxed font-medium">
+              <p className="text-sm text-slate-600 leading-relaxed font-medium">
                 Join us at the state-of-the-art İstanbul Gelişim Üniversitesi Tower, designed to inspire collaboration and
                 innovation in medical sciences. The venue features modern auditoriums, interactive exhibition spaces, and
                 comfortable networking areas.
@@ -46,7 +46,7 @@ export default function VenuePage() {
             </div>
 
             <div className="flex flex-col gap-6 bg-slate-50 p-8 rounded-2xl border border-slate-100">
-              <h3 className="text-xl font-bold text-emerald-950">Contact & Address</h3>
+              <h3 className="text-base font-bold text-emerald-950">Contact & Address</h3>
 
               {[
                 {

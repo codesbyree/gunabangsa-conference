@@ -13,7 +13,7 @@ export default function PublicationOpportunity() {
         >
           <div className="lg:col-span-8">
             <div className="text-emerald-600 text-xs font-black uppercase tracking-[0.4em] mb-4">Information</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 leading-tight">Publication Opportunity</h2>
+            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 leading-tight">Publication Opportunity</h2>
           </div>
         </motion.div>
 

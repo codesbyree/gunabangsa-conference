@@ -51,12 +51,12 @@ export default function RegistrationPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">Registration Fees</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 mb-6">Registration & Payment Information</h2>
+            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">Registration & Payment Information</h2>
           </div>
           <div className="space-y-10">
             {REGULAR_PRICING.map((section, idx) => (
               <div key={idx} className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold text-emerald-900/80 mb-4 tracking-tight text-center">{section.title}</h3>
+                <h3 className="text-sm font-bold text-emerald-900/80 mb-3 tracking-tight text-center">{section.title}</h3>
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                   {section.tiers.map((tier, tIdx) => (
                     <PricingCard
@@ -80,14 +80,14 @@ export default function RegistrationPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">Registration Fees</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 mb-6">
+            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">
               Combined Registration & Publication (Scopus Proceedings)
             </h2>
           </div>
           <div className="space-y-10">
             {COMBINED_PRICING.map((section, idx) => (
               <div key={idx} className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold text-emerald-900/80 mb-4 tracking-tight text-center">{section.title}</h3>
+                <h3 className="text-sm font-bold text-emerald-900/80 mb-3 tracking-tight text-center">{section.title}</h3>
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto w-full">
                   {section.tiers.map((tier, tIdx) => (
                     <PricingCard
@@ -110,14 +110,14 @@ export default function RegistrationPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">Registration Fees</div>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-emerald-950 mb-6">
+            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">
               Nusa Putra University Member (Student / Lecturer)
             </h2>
           </div>
           <div className="space-y-10">
             {NPU_PRICING.map((section, idx) => (
               <div key={idx} className="flex flex-col gap-4">
-                <h3 className="text-xl font-bold text-emerald-900/80 mb-4 tracking-tight text-center">{section.title}</h3>
+                <h3 className="text-sm font-bold text-emerald-900/80 mb-3 tracking-tight text-center">{section.title}</h3>
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto w-full">
                   {section.tiers.map((tier, tIdx) => (
                     <PricingCard
@@ -139,7 +139,7 @@ export default function RegistrationPage() {
         <div className="max-w-7xl mx-auto px-6 space-y-10">
           <div className="flex items-center gap-4">
             <ClipboardListIcon className="w-8 h-8 text-emerald-600" />
-            <h3 className="text-xl md:text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+            <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
               Important Notes for Authors
             </h3>
           </div>
@@ -147,7 +147,7 @@ export default function RegistrationPage() {
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
                 <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">For Participants</h3>
+                <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">For Participants</h3>
               </div>
               <NumberedArticle items={[
                 { text: 'Participants must complete account registration before proceeding.' },
@@ -163,7 +163,7 @@ export default function RegistrationPage() {
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
                 <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">For Presenters</h3>
+                <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">For Presenters</h3>
               </div>
               <NumberedArticle items={[
                 { text: 'All prospective presenters are required to complete the account registration process on the official portal before proceeding with the submission.' },
@@ -187,7 +187,7 @@ export default function RegistrationPage() {
         <div className="max-w-7xl mx-auto px-6 space-y-10">
           <div className="flex items-center gap-4">
             <ClipboardListIcon className="w-8 h-8 text-emerald-600" />
-            <h3 className="text-xl md:text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+            <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
               Registrations Benefits
             </h3>
           </div>
@@ -195,7 +195,7 @@ export default function RegistrationPage() {
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
                 <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">For onsite participants</h3>
+                <h3 className="text-sm font-extrabold text-emerald-950 uppercase tracking-tight">For onsite participants</h3>
               </div>
               <NumberedArticle items={[
                 { text: 'Conference Program Book' },
@@ -209,7 +209,7 @@ export default function RegistrationPage() {
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
                 <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-xl md:text-2xl font-extrabold text-emerald-950 uppercase tracking-tight">For online participants</h3>
+                <h3 className="text-sm font-extrabold text-emerald-950 uppercase tracking-tight">For online participants</h3>
               </div>
               <NumberedArticle items={[
                 { text: 'Conference Program e-Book' },
@@ -226,7 +226,7 @@ export default function RegistrationPage() {
         <div className="max-w-7xl mx-auto px-6 space-y-10">
           <div className="flex items-center gap-4">
             <AlertTriangleIcon className="w-8 h-8 text-emerald-600" />
-            <h3 className="text-xl md:text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+            <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
               Important Notes
             </h3>
           </div>

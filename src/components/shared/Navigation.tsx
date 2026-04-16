@@ -22,7 +22,7 @@ function NavLink({ href, children, active }: { href: string; children: React.Rea
   return (
     <Link
       to={href}
-      className={`hover:text-emerald-400 transition uppercase tracking-widest text-sm font-bold ${active ? 'text-emerald-400' : ''}`}
+      className={`hover:text-emerald-400 transition uppercase tracking-widest text-xs font-bold ${active ? 'text-emerald-400' : ''}`}
     >
       {children}
     </Link>
@@ -37,7 +37,7 @@ function DropdownMenu({ title, links }: { title: string; links: { href: string; 
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
-      <button className="hover:text-emerald-400 transition uppercase tracking-widest flex items-center gap-1 text-sm font-bold">
+      <button className="hover:text-emerald-400 transition uppercase tracking-widest flex items-center gap-1 text-xs font-bold">
         {title}
         <ChevronDown className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} />
       </button>
@@ -55,7 +55,7 @@ function DropdownMenu({ title, links }: { title: string; links: { href: string; 
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`block w-full text-left px-6 py-3 text-sm font-bold text-emerald-100/70 hover:bg-emerald-500 hover:text-emerald-950 transition-colors ${index !== links.length - 1 ? 'border-b border-white/5' : ''}`}
+                  className={`block w-full text-left px-5 py-2.5 text-xs font-bold text-emerald-100/70 hover:bg-emerald-500 hover:text-emerald-950 transition-colors ${index !== links.length - 1 ? 'border-b border-white/5' : ''}`}
                 >
                   {link.label}
                 </Link>
@@ -93,7 +93,7 @@ export default function Navigation() {
           >
             H
           </motion.div>
-          <span className="font-extrabold text-white tracking-tighter text-xl uppercase">HEALTHMED-IC</span>
+          <span className="font-extrabold text-white tracking-tighter text-base uppercase">HEALTHMED-IC</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-5 text-emerald-100/70">
