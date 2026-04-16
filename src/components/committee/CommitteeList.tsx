@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { Users, Globe2, FlaskConical, MonitorDot, LucideIcon } from 'lucide-react';
+import { Users, Globe2, FlaskConical, MonitorDot, BookOpen, Megaphone, ClipboardList, Package, LucideIcon } from 'lucide-react';
 
 interface CommitteeMember {
   role: string;
   name: string;
-  affiliation: string;
+  affiliation?: string;
 }
 
 interface CommitteeSection {
@@ -13,48 +13,49 @@ interface CommitteeSection {
   data: CommitteeMember[];
 }
 
-const organizing: CommitteeMember[] = [
-  { role: 'Person in Charge', name: 'Dr. H. Kurniawan, ST., M.Si., MM.', affiliation: 'Rector of Nusa Putra University' },
-  { role: 'General Chair of Nusa Putra Global Conference', name: 'Ir. Paikun, ST., MT., IPM, ASEAN Eng.', affiliation: 'Nusa Putra University' },
-  { role: 'Technical Program Committee Chairs', name: 'Dr. Ir. Iwan Setiawan, M.T., M.M., MCSA., SMIEEE, IPM, ASEAN Eng., APEC Eng.', affiliation: 'Nusa Putra University' },
-  { role: 'Administrative Officer', name: 'Alfyn Abdan Nurahman, M.Pd.', affiliation: 'Nusa Putra University' },
-  { role: 'Treasurer', name: 'Dr. Agus Hendriyanto, M.Pd.', affiliation: 'Nusa Putra University' },
-  { role: 'Co-Chair', name: 'Prof. Dr. Kenan Aydın', affiliation: 'Istanbul Gelişim University' },
-  { role: 'Member', name: 'Prof. Dr. Recai Aydın', affiliation: 'Duzce University' },
+const steering: CommitteeMember[] = [
+  { role: 'Chair', name: 'Dr. dr. R. Soerdjo Hadijono, SpOG(K), DTRM & B(Ch).', affiliation: '' },
+  { role: 'Member', name: 'Dr. Wiwik Suryandartiwi, MM', affiliation: '' },
 ];
 
-const international: CommitteeMember[] = [
-  { role: 'Member', name: 'Dr. Samsul Pahmi, M.Pd.', affiliation: 'Nusa Putra University' },
-  { role: 'Member', name: 'Muhamad Muslih, S.T., M.Kom.', affiliation: 'Nusa Putra University' },
-  { role: 'Member', name: 'Assist. Prof. Ir. Anggy Pradiftha Juniftharana, S.Pd., M.T.', affiliation: 'Nusa Putra University' },
+const conferenceChair: CommitteeMember[] = [
+  { role: 'Conference Chair', name: 'Dr. Dian Wuri Astuti, S.Si., M.Sc., CIRR', affiliation: 'STIKES Guna Bangsa Yogyakarta' },
+  { role: 'Co-Chair', name: 'Ir. Okka Adiyanto, S.T.P., M.Sc., Ph.D.', affiliation: 'STIKES Guna Bangsa Yogyakarta' },
+  { role: 'Co-Chair', name: 'Gravinda Widyaswara, S.Si., M.Sc.', affiliation: 'STIKES Guna Bangsa Yogyakarta' },
+  { role: 'Co-Chair', name: 'Wisnu Budi Waluyo', affiliation: 'STIKES Guna Bangsa Yogyakarta' },
+  { role: 'Secretary', name: 'Dian Monalisa', affiliation: '' },
+  { role: 'Treasurer', name: 'Ayu Wita Sari, S.Si., M.Sc.', affiliation: '' },
+  { role: 'Treasurer', name: 'Maryudella Afrida, S.Kep., Ns., M.Kep', affiliation: '' },
 ];
 
 const scientific: CommitteeMember[] = [
-  { role: 'Member', name: 'Lukman Hakim Muhaimin, M.Pd.', affiliation: 'Nusa Putra University' },
-  { role: 'Member', name: 'Aryo De Wibowo Muhammad Sidik, S.T., M.T.', affiliation: 'Nusa Putra University' },
-  { role: 'Member', name: 'Ali Guma', affiliation: 'Muni University, Uganda' },
-  { role: 'Member', name: 'Dr. Karthik Meduri', affiliation: 'University of the Cumberlands, USA' },
-  { role: 'Member', name: 'Assoc. Prof. Rusydi Umar, S.T., M.T., Ph.D.', affiliation: 'Ahmad Dahlan University, Indonesia' },
-  { role: 'Member', name: 'Assoc. Prof. Dr. Murinto, S.Si., M.Kom.', affiliation: 'Ahmad Dahlan University, Indonesia' },
-  { role: 'Member', name: 'Dr. Eng. Ir. Muhammad Kunta Biddinika, S.T., M. Eng.', affiliation: 'Ahmad Dahlan University, Indonesia' },
-  { role: 'Member', name: 'Prof. Jerry Chun-Wei Lin', affiliation: 'Silesian University of Technology, Poland' },
-  { role: 'Member', name: 'Lan Kong, Ph.D.', affiliation: 'Eastern Kentucky University, USA' },
-  { role: 'Member', name: 'Ir. Herman Yuliansyah, S.T., M.Eng., Ph.D.', affiliation: 'Ahmad Dahlan University, Indonesia' },
-  { role: 'Member', name: 'Naresh Kshetri, Ph.D', affiliation: 'Lindenwood University, USA' },
-  { role: 'Member', name: 'Dr. Wartika, S.Kom, MT', affiliation: 'Universitas Komputer Indonesia, Indonesia' },
+  { role: 'Member', name: 'Asst. Prof. Dr. Kamolrat Turner', affiliation: 'Boromarajonani' },
+  { role: 'Member', name: 'Asst. Prof. Dr. Boonsurb Sosome', affiliation: 'Boromarajonani' },
+  { role: 'Member', name: 'Assoc. Prof. Ts. Dr. Wan I. Ismail', affiliation: 'Universiti Teknologi Mara' },
 ];
 
-const itSupport: CommitteeMember[] = [
-  { role: 'Member', name: 'Muhammad Ikhsan Thohir, M.Kom.', affiliation: 'Nusa Putra University' },
-  { role: 'Member', name: 'M. Haikal Irhamna, S.Kom.', affiliation: 'Nusa Putra University' },
-  { role: 'Member', name: 'Ujang Herlan', affiliation: 'Nusa Putra University' },
+const publication: CommitteeMember[] = [
+  { role: 'Member', name: 'Prof. Abdul Ghofur Anshori, SH., MH', affiliation: '' },
+  { role: 'Member', name: 'Aulia Rahman, S.Si., M.Biotech', affiliation: '' },
+];
+
+const pr: CommitteeMember[] = [
+  { role: 'Public Relations & Partnership', name: 'Sarika Setya Putri, S.Tr.Kes (Rad), M.Eng.', affiliation: '' },
+  { role: 'Registration & Secretariat', name: 'Shandy Wigya, M.Tr.Keb', affiliation: '' },
+];
+
+const itLogistics: CommitteeMember[] = [
+  { role: 'IT & Documentation', name: 'Bimantoro', affiliation: '' },
+  { role: 'Logistics & Event Management', name: 'Mia Dwi Agustiani, S.S.T., M.Tr.Keb', affiliation: '' },
 ];
 
 const sections: CommitteeSection[] = [
-  { title: 'Organizing Committee', icon: Users, data: organizing },
-  { title: 'International Advisory Committee', icon: Globe2, data: international },
+  { title: 'Steering Committee', icon: Users, data: steering },
+  { title: 'Conference Chair & Administration', icon: ClipboardList, data: conferenceChair },
   { title: 'Scientific / Technical Program Committee', icon: FlaskConical, data: scientific },
-  { title: 'IT and Technical Support Committee', icon: MonitorDot, data: itSupport },
+  { title: 'Publication & Proceedings Committee', icon: BookOpen, data: publication },
+  { title: 'Public Relations, Registry & Secretariat', icon: Megaphone, data: pr },
+  { title: 'IT, Documentation & Logistics', icon: MonitorDot, data: itLogistics },
 ];
 
 export default function CommitteeList() {
@@ -92,7 +93,9 @@ export default function CommitteeList() {
                     {member.role}
                   </div>
                   <h3 className="text-lg font-bold text-emerald-950 mb-2 leading-snug">{member.name}</h3>
-                  <p className="text-sm text-slate-500 font-medium">{member.affiliation}</p>
+                  {member.affiliation && (
+                    <p className="text-sm text-slate-500 font-medium">{member.affiliation}</p>
+                  )}
                 </motion.div>
               ))}
             </div>

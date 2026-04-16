@@ -101,34 +101,50 @@ export const SCOPES = [
   }
 ];
 
-export const SPEAKERS = [
+export const KEYNOTE_SPEAKERS = [
   {
     id: 1,
     name: "To be announced",
-    title: "Position Title",
-    affiliation: "University or Organization",
+    title: "Keynote Speaker",
+    affiliation: "To be confirmed",
     bio: "Detailed biography and background information will be updated here soon.",
-    topic: 'Machine Learning in Medical Field',
-    sessionDate: 'July 3rd, 2026 (Arena 1)'
+    topic: 'To be announced',
+    sessionDate: 'Nov 5–7, 2026',
+    type: 'keynote' as const,
+  },
+];
+
+export const SPEAKERS = [
+  {
+    id: 1,
+    name: "Dr. Fitri Nadifah, S.Si., M.Sc.",
+    title: "Invited Speaker",
+    affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
+    bio: "Dr. Fitri Nadifah is a distinguished researcher and academic at STIKES Guna Bangsa Yogyakarta, contributing to advancements in biomedical and health sciences.",
+    topic: 'Healthcare Innovation & Life Sciences',
+    sessionDate: 'Nov 5–7, 2026',
+    type: 'invited' as const,
   },
   {
     id: 2,
-    name: "To be announced",
-    title: "Position Title",
-    affiliation: "University or Organization",
-    bio: "Detailed biography and background information will be updated here soon.",
-    topic: 'Machine Learning in Medical Field',
-    sessionDate: 'July 3rd, 2026 (Arena 1)'
+    name: "Dr. Ikrimah Nafilata, S.K.M., M.Kes(Epid)",
+    title: "Invited Speaker",
+    affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
+    bio: "Dr. Ikrimah Nafilata is an expert in epidemiology and public health at STIKES Guna Bangsa Yogyakarta, with extensive experience in health management and epidemiological research.",
+    topic: 'Epidemiology & Public Health',
+    sessionDate: 'Nov 5–7, 2026',
+    type: 'invited' as const,
   },
   {
     id: 3,
-    name: "To be announced",
-    title: "Position Title",
-    affiliation: "University or Organization",
-    bio: "Detailed biography and background information will be updated here soon.",
-    topic: 'Machine Learning in Medical Field',
-    sessionDate: 'July 3rd, 2026 (Arena 1)'
-  }
+    name: "Anita Nur Mayani, S.Tr.Rad., M.T.",
+    title: "Invited Speaker",
+    affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
+    bio: "Anita Nur Mayani specializes in radiological technology and medical imaging at STIKES Guna Bangsa Yogyakarta, with significant contributions to diagnostic imaging research.",
+    topic: 'Medical Imaging & Radiological Technology',
+    sessionDate: 'Nov 5–7, 2026',
+    type: 'invited' as const,
+  },
 ];
 
 export const DEADLINES = [

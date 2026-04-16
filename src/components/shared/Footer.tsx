@@ -15,7 +15,9 @@ export default function Footer() {
                 <span className="font-extrabold text-white tracking-tighter text-2xl">HEALTHMED-IC</span>
               </div>
               <p className="text-emerald-100/70 text-sm font-medium leading-relaxed max-w-sm mb-10">
-                The definitive international summit for medical excellence and technological advancement in life sciences. Facilitating global scientific dialogue.
+                The 1st HEALTHMED-IC is an international scientific conference hosted by{' '}
+                <strong className="text-emerald-400">STIKES Guna Bangsa Yogyakarta, Indonesia</strong>, bringing together
+                global academic and healthcare communities.
               </p>
               <div className="flex gap-3">
                 {[
@@ -62,7 +64,7 @@ export default function Footer() {
           </div>
 
           <div className="pt-12 border-t border-emerald-100/70 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-widest text-slate-300">
-            <p>© 2026 HEALTHMED-IC Scientific Committee. All rights reserved.</p>
+            <p>© 2026 The 1st HEALTHMED-IC — STIKES Guna Bangsa Yogyakarta. All rights reserved.</p>
           </div>
         </div>
       </footer>

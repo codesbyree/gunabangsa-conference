@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-[0.3em] mb-10"
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-[0.3em] mb-6"
         >
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
@@ -29,23 +29,43 @@ export default function Hero() {
           Submissions Now Open
         </motion.div>
 
+        {/* Host line */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.05 }}
+          className="text-emerald-400/60 text-xs font-bold uppercase tracking-[0.25em] mb-4"
+        >
+          Hosted by STIKES Guna Bangsa Yogyakarta, Indonesia
+        </motion.p>
+
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.2] mb-10 tracking-tighter max-w-5xl mx-auto"
+          className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.2] mb-6 tracking-tighter max-w-5xl mx-auto"
         >
-          Healthcare Excellence and Advancements in Life Treatment & Human Medicine – International Conference{' '}
+          The 1st Healthcare Excellence and Advancements in Life Treatment & Human Medicine – International Conference{' '}
           <span className="text-emerald-500">(HEALTHMED-IC)</span>
         </motion.h1>
+
+        {/* Theme */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-emerald-100/50 text-sm font-medium italic max-w-3xl mx-auto mb-10 leading-relaxed"
+        >
+          "Innovating Healthcare Excellence: Integrating Advanced Life Treatment and Human-Centered Medicine for a Sustainable Future"
+        </motion.p>
 
         {/* Date and Venue */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col md:flex-row items-center justify-center gap-12 mt-12 mb-16"
+          className="flex flex-col md:flex-row items-center justify-center gap-12 mt-4 mb-16"
         >
           <div className="flex flex-col items-center md:items-start">
             <span className="text-emerald-500/50 text-[10px] uppercase font-black tracking-widest mb-1">Date</span>
