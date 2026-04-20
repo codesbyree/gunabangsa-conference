@@ -124,15 +124,15 @@ export const KEYNOTE_SPEAKERS = [
 
 export const SPEAKERS = [
   {
-    id: 1,
-    name: "Dr. Fitri Nadifah, S.Si., M.Sc.",
+    id: 3,
+    name: "Anita Nur Mayani, S.Tr.Rad., M.T.",
     title: "Invited Speaker",
     affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
-    bio: "Dr. Fitri Nadifah is a distinguished researcher and academic at STIKES Guna Bangsa Yogyakarta, contributing to advancements in biomedical and health sciences.",
-    topic: "Healthcare Innovation & Life Sciences",
+    bio: "Anita Nur Mayani specializes in radiological technology and medical imaging at STIKES Guna Bangsa Yogyakarta, with significant contributions to diagnostic imaging research.",
+    topic: "Medical Imaging & Radiological Technology",
     sessionDate: "Nov 5–7, 2026",
     type: "invited" as const,
-    image: "/assets/images/speakers/fitri-nadifah.webp",
+    image: "/assets/images/speakers/anita-nur-mayani.jpeg",
   },
   {
     id: 2,
@@ -146,15 +146,15 @@ export const SPEAKERS = [
     image: "/assets/images/speakers/ikrimah-nafilata.jpeg",
   },
   {
-    id: 3,
-    name: "Anita Nur Mayani, S.Tr.Rad., M.T.",
+    id: 1,
+    name: "Dr. Fitri Nadifah, S.Si., M.Sc.",
     title: "Invited Speaker",
     affiliation: "STIKES Guna Bangsa Yogyakarta, Indonesia",
-    bio: "Anita Nur Mayani specializes in radiological technology and medical imaging at STIKES Guna Bangsa Yogyakarta, with significant contributions to diagnostic imaging research.",
-    topic: "Medical Imaging & Radiological Technology",
+    bio: "Dr. Fitri Nadifah is a distinguished researcher and academic at STIKES Guna Bangsa Yogyakarta, contributing to advancements in biomedical and health sciences.",
+    topic: "Healthcare Innovation & Life Sciences",
     sessionDate: "Nov 5–7, 2026",
     type: "invited" as const,
-    image: "/assets/images/speakers/placeholder.jpg",
+    image: "/assets/images/speakers/fitri-nadifah.webp",
   },
 ];
 

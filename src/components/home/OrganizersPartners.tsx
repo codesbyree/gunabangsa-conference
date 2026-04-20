@@ -76,12 +76,12 @@ export default function OrganizersPartners() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="flex flex-col items-center gap-4 group"
             >
-              <div className="relative w-56 h-36 bg-white border-2 border-slate-200 rounded-2xl shadow-lg shadow-slate-950/5 flex items-center justify-center p-5 overflow-hidden group-hover:border-slate-300 group-hover:shadow-xl transition-all duration-300">
+              <div className="relative w-56 h-36 bg-white border-2 border-slate-200 rounded-2xl shadow-lg shadow-slate-950/5 flex items-center justify-center p-4 overflow-hidden group-hover:border-slate-300 group-hover:shadow-xl transition-all duration-300">
                 <div className="absolute inset-0 bg-slate-50/50 group-hover:bg-slate-50 transition-colors duration-300" />
                 <img
-                  src="/assets/images/npu-logo.png"
+                  src="/assets/images/co-host.jpeg"
                   alt="Nusa Putra University"
-                  className="relative w-full h-full object-contain"
+                  className="relative w-full h-full object-contain mix-blend-multiply"
                 />
               </div>
               <div className="text-center">
@@ -89,10 +89,11 @@ export default function OrganizersPartners() {
                   Co-Host
                 </p>
                 <p className="text-xs font-bold text-emerald-950 leading-tight">
-                  Nusa Putra University
+                  Boromarajonani College of Nursing, <br />
+                  Sawanpracharak Nakhon Sawan
                 </p>
                 <p className="text-[10px] text-slate-400 font-medium">
-                  Sukabumi, Indonesia
+                  Nakhon Sawan, Thailand
                 </p>
               </div>
             </motion.div>
