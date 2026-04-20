@@ -100,18 +100,16 @@ export default function Navigation() {
   return (
     <nav className="fixed top-3 left-0 right-0 z-50 px-4" id="main-nav">
       <div
-        className={`max-w-5xl mx-auto bg-emerald-950/90 backdrop-blur-xl border border-white/10 rounded-full h-16 flex items-center justify-between px-6 pr-4 shadow-2xl shadow-emerald-950/20 transition-all duration-300 ${scrolled ? "shadow-emerald-950/40" : ""}`}
+        className={`max-w-5xl mx-auto bg-emerald-950/90 backdrop-blur-xl border border-white/10 rounded-full h-16 flex items-center justify-between px-6 pr-4 pl-2 shadow-2xl shadow-emerald-950/20 transition-all duration-300 ${scrolled ? "shadow-emerald-950/40" : ""}`}
       >
         <Link to="/" className="flex items-center gap-3 group">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            className="w-8 h-8 bg-emerald-500 rounded flex items-center justify-center font-bold text-white italic"
-          >
-            H
+          <motion.div whileHover={{ scale: 1.1 }} className="">
+            <img
+              src="/assets/images/conferencce-logo.png"
+              alt="Logo"
+              className="h-13"
+            />
           </motion.div>
-          <span className="font-extrabold text-white tracking-tighter text-base uppercase">
-            HEALTHMED-IC
-          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-5 text-emerald-100/70">
