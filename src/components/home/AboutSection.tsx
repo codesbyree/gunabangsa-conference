@@ -57,8 +57,8 @@ export default function AboutSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
+        <div className="grid grid-cols-1 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <motion.div
               variants={fadeUp}
               initial="hidden"
@@ -141,7 +141,7 @@ export default function AboutSection() {
             </motion.div>
           </div>
 
-          <motion.div
+          {/* <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
@@ -152,7 +152,7 @@ export default function AboutSection() {
             <div className="bg-slate-200 rounded-lg col-span-2"></div>
             <div className="bg-slate-200 rounded-lg col-span-1"></div>
             <div className="bg-slate-200 rounded-lg col-span-1"></div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
