@@ -20,7 +20,7 @@ export default function GalleryPage() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: (i - 1) * 0.07 }}
               whileHover={{ y: -8 }}
-              className="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-emerald-950/5 overflow-hidden flex items-center justify-center cursor-pointer"
+              className="aspect-video bg-slate-50 border border-slate-100 rounded-2xl p-2 shadow-xl shadow-red-950/5 overflow-hidden flex items-center justify-center cursor-pointer"
             >
               <p className="text-slate-400 font-bold uppercase tracking-widest text-center text-xs">Gallery Image {i}</p>
             </motion.div>

@@ -13,22 +13,22 @@ export default function Footer() {
   return (
     <>
       <HomeMarquee />
-      <footer id="footer" className="bg-emerald-950 pt-24 pb-12">
+      <footer id="footer" className="bg-red-950 pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-12 mb-20">
             <div className="md:col-span-2">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-8 h-8 bg-emerald-900 rounded flex items-center justify-center font-bold text-white italic">
+                <div className="w-8 h-8 bg-red-900 rounded flex items-center justify-center font-bold text-white italic">
                   H
                 </div>
                 <span className="font-extrabold text-white tracking-tighter text-xl">
                   HEALTHMED-IC
                 </span>
               </div>
-              <p className="text-emerald-100/70 text-sm font-medium leading-relaxed max-w-sm mb-10">
+              <p className="text-red-100/70 text-sm font-medium leading-relaxed max-w-sm mb-10">
                 The 1st HEALTHMED-IC is an international scientific conference
                 hosted by{" "}
-                <strong className="text-emerald-400">
+                <strong className="text-red-400">
                   STIKES Guna Bangsa Yogyakarta, Indonesia
                 </strong>
                 , bringing together global academic and healthcare communities.
@@ -46,10 +46,10 @@ export default function Footer() {
                     key={label}
                     href={href}
                     aria-label={label}
-                    className="w-[42px] h-[42px] bg-emerald-500 rounded-full flex items-center justify-center hover:-translate-y-1 transition-transform cursor-pointer"
+                    className="w-[42px] h-[42px] bg-red-500 rounded-full flex items-center justify-center hover:-translate-y-1 transition-transform cursor-pointer"
                   >
                     <Icon
-                      className="w-[18px] h-[18px] text-emerald-950"
+                      className="w-[18px] h-[18px] text-red-950"
                       fill={fill ? "currentColor" : "none"}
                     />
                   </a>
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/"
-                    className="text-emerald-100/70 hover:text-emerald-100 transition"
+                    className="text-red-100/70 hover:text-red-100 transition"
                   >
                     Abstract Submission
                   </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/program"
-                    className="text-emerald-100/70 hover:text-emerald-100 transition"
+                    className="text-red-100/70 hover:text-red-100 transition"
                   >
                     Conference Program
                   </Link>
@@ -81,7 +81,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/"
-                    className="text-emerald-100/70 hover:text-emerald-100 transition"
+                    className="text-red-100/70 hover:text-red-100 transition"
                   >
                     Ethical Guidelines
                   </Link>
@@ -89,7 +89,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/committee"
-                    className="text-emerald-100/70 hover:text-emerald-100 transition"
+                    className="text-red-100/70 hover:text-red-100 transition"
                   >
                     Committees
                   </Link>
@@ -104,23 +104,23 @@ export default function Footer() {
               <div className="space-y-4 text-sm font-medium">
                 <a
                   href="tel:0000000000"
-                  className="flex items-center gap-4 text-emerald-100/70 hover:text-emerald-100 transition"
+                  className="flex items-center gap-4 text-red-100/70 hover:text-red-100 transition"
                 >
-                  <PhoneIcon className="w-4 h-4 text-emerald-800" />
+                  <PhoneIcon className="w-4 h-4 text-red-800" />
                   <span>(000) 000-0000</span>
                 </a>
                 <a
                   href="mailto:HEALTHMED-IC@gunabangsa.ac.id"
-                  className="flex items-center gap-4 text-emerald-100/70 hover:text-emerald-100 transition"
+                  className="flex items-center gap-4 text-red-100/70 hover:text-red-100 transition"
                 >
-                  <MailIcon className="w-4 h-4 text-emerald-800" />
+                  <MailIcon className="w-4 h-4 text-red-800" />
                   <span>HEALTHMED-IC@gunabangsa.ac.id</span>
                 </a>
               </div>
             </div>
           </div>
 
-          <div className="pt-12 border-t border-emerald-100/70 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-widest text-slate-300">
+          <div className="pt-12 border-t border-red-100/70 flex flex-col md:flex-row justify-between items-center text-[10px] font-black uppercase tracking-widest text-slate-300">
             <p>
               © 2026 The 1st HEALTHMED-IC — STIKES Guna Bangsa Yogyakarta. All
               rights reserved.

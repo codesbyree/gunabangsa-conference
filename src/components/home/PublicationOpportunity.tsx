@@ -12,8 +12,8 @@ export default function PublicationOpportunity() {
           className="grid lg:grid-cols-12 gap-12 items-end mb-20"
         >
           <div className="lg:col-span-8">
-            <div className="text-emerald-600 text-xs font-black uppercase tracking-[0.4em] mb-4">Information</div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 leading-tight">Publication Opportunity</h2>
+            <div className="text-red-600 text-xs font-black uppercase tracking-[0.4em] mb-4">Information</div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-red-950 leading-tight">Publication Opportunity</h2>
           </div>
         </motion.div>
 

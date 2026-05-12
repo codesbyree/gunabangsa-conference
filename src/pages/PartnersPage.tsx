@@ -5,8 +5,8 @@ export default function PartnersPage() {
     <>
       <SubPageHeader title="Our Partners" />
       <section className="max-w-4xl mx-auto px-6 py-24">
-        <div className="bg-slate-50 border border-slate-100 rounded-2xl p-8 mb-8 shadow-xl shadow-emerald-950/5">
-          <h2 className="text-2xl font-bold text-emerald-950 mb-6 tracking-tight">Sponsors and Global Partners</h2>
+        <div className="bg-slate-50 border border-slate-100 rounded-2xl p-8 mb-8 shadow-xl shadow-red-950/5">
+          <h2 className="text-2xl font-bold text-red-950 mb-6 tracking-tight">Sponsors and Global Partners</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {[1, 2, 3, 4, 5, 6].map((i) => (
               <div

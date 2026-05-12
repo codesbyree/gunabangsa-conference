@@ -65,13 +65,13 @@ export default function FaqPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: idx * 0.05 }}
-            className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-emerald-200 transition-all duration-300"
+            className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-red-200 transition-all duration-300"
           >
             <div className="flex items-start gap-3 mb-3">
-              <span className="w-5 h-5 rounded-full bg-emerald-500 text-emerald-950 font-black text-[10px] flex items-center justify-center shrink-0 mt-0.5">
+              <span className="w-5 h-5 rounded-full bg-red-500 text-red-950 font-black text-[10px] flex items-center justify-center shrink-0 mt-0.5">
                 Q
               </span>
-              <h3 className="text-sm font-bold text-emerald-950 leading-snug">{faq.q}</h3>
+              <h3 className="text-sm font-bold text-red-950 leading-snug">{faq.q}</h3>
             </div>
             <div className="ml-8 space-y-2">
               <p className="text-slate-500 leading-relaxed font-medium">{faq.a}</p>
@@ -80,10 +80,10 @@ export default function FaqPage() {
                 <ul className="mt-2 space-y-1">
                   {faq.links.map((l) => (
                     <li key={l.to} className="flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-emerald-400 shrink-0" />
+                      <span className="w-1 h-1 rounded-full bg-red-400 shrink-0" />
                       <Link
                         to={l.to}
-                        className="text-emerald-600 font-bold hover:text-emerald-800 underline underline-offset-2 transition-colors"
+                        className="text-red-600 font-bold hover:text-red-800 underline underline-offset-2 transition-colors"
                       >
                         {l.label}
                       </Link>
@@ -95,7 +95,7 @@ export default function FaqPage() {
               {'link' in faq && faq.link && (
                 <Link
                   to={faq.link.to}
-                  className="inline-block mt-1 text-emerald-600 font-bold hover:text-emerald-800 underline underline-offset-2 transition-colors"
+                  className="inline-block mt-1 text-red-600 font-bold hover:text-red-800 underline underline-offset-2 transition-colors"
                 >
                   {faq.link.label} →
                 </Link>

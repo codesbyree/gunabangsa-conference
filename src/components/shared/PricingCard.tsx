@@ -26,7 +26,7 @@ export default function PricingCard({
         <div className="h-10">
           <h4 className="text-lg font-semibold text-slate-900">{cardTitle}</h4>
           {cardSubtitle && (
-            <p className="text-xs font-medium text-slate-600 mt-1 px-2 py-1 bg-emerald-500/30 rounded-full w-max">
+            <p className="text-xs font-medium text-slate-600 mt-1 px-2 py-1 bg-red-500/30 rounded-full w-max">
               {cardSubtitle}
             </p>
           )}
@@ -60,7 +60,7 @@ export default function PricingCard({
         href="https://igers.org"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full text-left flex items-center gap-4 justify-between text-sm bg-linear-to-br from-emerald-800 via-emerald-900 to-emerald-950 text-emerald-50 rounded-xl p-2 cursor-pointer border border-dashed border-emerald-500 hover:opacity-90 transition-opacity shadow-md"
+        className="w-full text-left flex items-center gap-4 justify-between text-sm bg-linear-to-br from-red-800 via-red-900 to-red-950 text-red-50 rounded-xl p-2 cursor-pointer border border-dashed border-red-500 hover:opacity-90 transition-opacity shadow-md"
       >
         <span>Register Here</span>
         <ArrowRight />

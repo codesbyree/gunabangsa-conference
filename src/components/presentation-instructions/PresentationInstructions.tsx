@@ -5,8 +5,8 @@ export default function PresentationInstructions() {
     <div className="max-w-7xl mx-auto px-6 py-24 space-y-24">
       <section className="space-y-8">
         <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
-          <AlertTriangle className="w-8 h-8 text-emerald-600" />
-          <h2 className="text-base md:text-lg lg:text-xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+          <AlertTriangle className="w-8 h-8 text-red-600" />
+          <h2 className="text-base md:text-lg lg:text-xl font-black text-red-950 tracking-tighter uppercase leading-tight">
             Important Notice
           </h2>
         </div>
@@ -25,8 +25,8 @@ export default function PresentationInstructions() {
       <div className="grid lg:grid-cols-2 gap-4">
         <section className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
           <div className="flex items-center gap-4 mb-4">
-            <MonitorPlay className="w-7 h-7 text-emerald-600" />
-            <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">Visual Preparation</h3>
+            <MonitorPlay className="w-7 h-7 text-red-600" />
+            <h3 className="text-base md:text-lg font-extrabold text-red-950 uppercase tracking-tight">Visual Preparation</h3>
           </div>
           <div className="space-y-6">
             {[
@@ -35,7 +35,7 @@ export default function PresentationInstructions() {
               'Speakers must arrive in the session room 30 minutes before the session starts to report to the session chair.',
             ].map((text, i) => (
               <div key={i} className="flex gap-5">
-                <div className="w-7 h-7 bg-emerald-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">{i + 1}</div>
+                <div className="w-7 h-7 bg-red-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">{i + 1}</div>
                 <p className="text-slate-600 leading-relaxed font-medium">{text}</p>
               </div>
             ))}
@@ -44,8 +44,8 @@ export default function PresentationInstructions() {
 
         <section className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
           <div className="flex items-center gap-4 mb-4">
-            <ListChecks className="w-7 h-7 text-emerald-600" />
-            <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">General Considerations</h3>
+            <ListChecks className="w-7 h-7 text-red-600" />
+            <h3 className="text-base md:text-lg font-extrabold text-red-950 uppercase tracking-tight">General Considerations</h3>
           </div>
           <div className="space-y-6">
             <p className="text-slate-600 text-sm font-medium">When preparing your presentation slides:</p>
@@ -57,7 +57,7 @@ export default function PresentationInstructions() {
                 'Graphs and charts should have bold lines and symbols with sharp contrast against the background.',
               ].map((text, i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <div className="w-2 h-2 rounded-full bg-emerald-400 mt-2 shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-red-400 mt-2 shrink-0" />
                   <p className="text-slate-600 leading-relaxed font-medium">{text}</p>
                 </li>
               ))}
@@ -69,7 +69,7 @@ export default function PresentationInstructions() {
       <section className="space-y-12">
         <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
           <CalendarX className="w-8 h-8 text-rose-600" />
-          <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">No-Show Policy</h3>
+          <h3 className="text-base md:text-lg font-extrabold text-red-950 uppercase tracking-tight">No-Show Policy</h3>
         </div>
         <div className="bg-rose-50/50 p-8 md:p-12 rounded-[3rem] border border-rose-100 relative overflow-hidden">
           <div className="absolute right-0 bottom-0 p-10 opacity-5 pointer-events-none text-rose-500">

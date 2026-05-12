@@ -25,7 +25,7 @@ export default function SubPageHeader({ title }: SubPageHeaderProps) {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-xl md:text-2xl lg:text-3xl font-black text-emerald-950 mb-4 tracking-tighter uppercase leading-tight"
+          className="text-xl md:text-2xl lg:text-3xl font-black text-red-950 mb-4 tracking-tighter uppercase leading-tight"
         >
           {title}
         </motion.h1>
@@ -35,31 +35,31 @@ export default function SubPageHeader({ title }: SubPageHeaderProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex items-center justify-center gap-3 text-xs font-bold tracking-tight"
         >
-          <Link to="/" className="text-slate-400 hover:text-emerald-600 transition">Home</Link>
+          <Link to="/" className="text-slate-400 hover:text-red-600 transition">Home</Link>
           <span className="text-slate-300">/</span>
-          <span className="text-emerald-600 uppercase tracking-widest">{title}</span>
+          <span className="text-red-600 uppercase tracking-widest">{title}</span>
         </motion.div>
       </div>
 
       {/* Dark marquee bar */}
-      <div className="bg-emerald-900 py-4 border-y border-emerald-900/30 overflow-hidden">
+      <div className="bg-red-900 py-4 border-y border-red-900/30 overflow-hidden">
         <div className="animate-marquee flex items-center gap-16 whitespace-nowrap will-change-transform">
           {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="flex items-center gap-16 text-emerald-400/90 font-black text-sm tracking-[0.2em] uppercase italic">
+            <div key={i} className="flex items-center gap-16 text-red-400/90 font-black text-sm tracking-[0.2em] uppercase italic">
               <span>Scientific Excellence</span>
-              <div className="text-emerald-500">
+              <div className="text-red-500">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0l2.5 9.5 9.5 2.5-9.5 2.5-2.5 9.5-2.5-9.5-9.5-2.5 9.5-2.5z" />
                 </svg>
               </div>
               <span>Global Innovation</span>
-              <div className="text-emerald-500">
+              <div className="text-red-500">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0l2.5 9.5 9.5 2.5-9.5 2.5-2.5 9.5-2.5-9.5-9.5-2.5 9.5-2.5z" />
                 </svg>
               </div>
               <span>Clinical Research</span>
-              <div className="text-emerald-500">
+              <div className="text-red-500">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0l2.5 9.5 9.5 2.5-9.5 2.5-2.5 9.5-2.5-9.5-9.5-2.5 9.5-2.5z" />
                 </svg>

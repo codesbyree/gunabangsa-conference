@@ -21,17 +21,17 @@ export default function AboutSection() {
           className="grid lg:grid-cols-12 gap-12 items-end mb-16"
         >
           <div className="lg:col-span-8">
-            <div className="text-emerald-600 text-xs font-black uppercase tracking-[0.4em] mb-4">
+            <div className="text-red-600 text-xs font-black uppercase tracking-[0.4em] mb-4">
               Invitation
             </div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 leading-tight">
+            <h2 className="text-xl md:text-2xl font-extrabold text-red-950 leading-tight">
               Welcome to The 1st HEALTHMED-IC
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-slate-500 text-sm font-medium leading-relaxed">
               Hosted by{" "}
-              <strong className="text-emerald-700">
+              <strong className="text-red-700">
                 STIKES Guna Bangsa Yogyakarta
               </strong>
               , Indonesia
@@ -46,12 +46,12 @@ export default function AboutSection() {
           whileInView="visible"
           custom={0.5}
           viewport={{ once: true }}
-          className="mb-12 p-6 rounded-2xl bg-emerald-50 border border-emerald-200"
+          className="mb-12 p-6 rounded-2xl bg-red-50 border border-red-200"
         >
-          <p className="text-emerald-600 text-[10px] font-black uppercase tracking-[0.3em] mb-2">
+          <p className="text-red-600 text-[10px] font-black uppercase tracking-[0.3em] mb-2">
             Conference Theme
           </p>
-          <p className="text-emerald-950 font-bold text-sm leading-snug">
+          <p className="text-red-950 font-bold text-sm leading-snug">
             "Innovating Healthcare Excellence: Integrating Advanced Life
             Treatment and Human-Centered Medicine for a Sustainable Future"
           </p>
@@ -74,7 +74,7 @@ export default function AboutSection() {
               <p>
                 It is with great honor and sincere pleasure that we invite you
                 to attend{" "}
-                <strong className="text-emerald-800">
+                <strong className="text-red-800">
                   The 1st HEALTHMED-IC
                 </strong>{" "}
                 (Healthcare Excellence and Advancements in Life Treatment &
@@ -115,7 +115,7 @@ export default function AboutSection() {
                   "Networking opportunities for global collaboration",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -135,7 +135,7 @@ export default function AboutSection() {
                 <em>innovate, collaborate, and advance healthcare</em> for a
                 better and healthier future.
               </p>
-              <p className="font-bold text-emerald-800">
+              <p className="font-bold text-red-800">
                 We look forward to welcoming you to The 1st HEALTHMED-IC.
               </p>
             </motion.div>

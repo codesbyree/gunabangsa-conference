@@ -4,7 +4,7 @@ import HeroCountdown from "./HeroCountdown";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-dvh flex flex-col items-center justify-center bg-emerald-950 py-20 lg:py-30 overflow-hidden">
+    <section className="relative min-h-dvh flex flex-col items-center justify-center bg-red-800 py-20 lg:py-30 overflow-hidden">
       {/* Grid background */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -20,11 +20,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-[0.25em] mb-4"
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-red-500/10 border border-red-500/30 text-red-400 text-[10px] font-black uppercase tracking-[0.25em] mb-4"
         >
           <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500" />
           </span>
           Submissions Now Open
         </motion.div>
@@ -34,7 +34,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.05 }}
-          className="text-emerald-400/60 text-[10px] font-bold uppercase tracking-[0.25em] mb-3"
+          className="text-red-400/60 text-[10px] font-bold uppercase tracking-[0.25em] mb-3"
         >
           Hosted by STIKES Guna Bangsa Yogyakarta, Indonesia
         </motion.p>
@@ -48,7 +48,7 @@ export default function Hero() {
         >
           The 1st Healthcare Excellence and Advancements in Life Treatment &
           Human Medicine – International Conference{" "}
-          <span className="text-emerald-500">(HEALTHMED-IC)</span>
+          <span className="text-red-500">(HEALTHMED-IC)</span>
         </motion.h1>
 
         {/* Theme */}
@@ -56,7 +56,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-emerald-100/50 text-xs font-medium italic max-w-3xl mx-auto mb-8 leading-relaxed"
+          className="text-red-100/50 text-xs font-medium italic max-w-3xl mx-auto mb-8 leading-relaxed"
         >
           "Innovating Healthcare Excellence: Integrating Advanced Life Treatment
           and Human-Centered Medicine for a Sustainable Future"
@@ -70,7 +70,7 @@ export default function Hero() {
           className="flex flex-col md:flex-row items-center justify-center gap-12 mt-4 mb-16"
         >
           <div className="flex flex-col items-center md:items-start">
-            <span className="text-emerald-500/50 text-[10px] uppercase font-black tracking-widest mb-1">
+            <span className="text-red-500/50 text-[10px] uppercase font-black tracking-widest mb-1">
               Date
             </span>
             <span className="text-white font-bold text-sm italic">
@@ -79,7 +79,7 @@ export default function Hero() {
           </div>
           <div className="w-px h-10 bg-white/10 hidden md:block" />
           <div className="flex flex-col items-center md:items-start">
-            <span className="text-emerald-500/50 text-[10px] uppercase font-black tracking-widest mb-1">
+            <span className="text-red-500/50 text-[10px] uppercase font-black tracking-widest mb-1">
               Venue
             </span>
             <span className="text-white font-bold text-sm italic">
@@ -99,7 +99,7 @@ export default function Hero() {
         >
           <Link
             to="/initial-submission"
-            className="px-8 py-4 bg-emerald-500 text-emerald-950 font-black text-sm uppercase tracking-widest rounded-md hover:bg-emerald-400 transition shadow-2xl shadow-emerald-500/20 active:scale-95 flex items-center justify-center"
+            className="px-8 py-4 bg-red-500 text-red-950 font-black text-sm uppercase tracking-widest rounded-md hover:bg-red-400 transition shadow-2xl shadow-red-500/20 active:scale-95 flex items-center justify-center"
           >
             Submit Your Abstract
           </Link>

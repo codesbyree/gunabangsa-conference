@@ -11,7 +11,7 @@ export default function Layout() {
   }, [pathname]);
 
   return (
-    <div className="font-['Plus_Jakarta_Sans',sans-serif] selection:bg-emerald-500 selection:text-white">
+    <div className="font-['Plus_Jakarta_Sans',sans-serif] selection:bg-red-500 selection:text-white">
       <Navigation />
       <main className="min-h-screen">
         <Outlet />

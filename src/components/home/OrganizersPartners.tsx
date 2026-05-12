@@ -14,10 +14,10 @@ export default function OrganizersPartners() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="text-emerald-600 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
+          <div className="text-red-600 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
             Network
           </div>
-          <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 leading-tight">
+          <h2 className="text-xl md:text-2xl font-extrabold text-red-950 leading-tight">
             Conference Organizers and Partners
           </h2>
         </motion.div>
@@ -36,8 +36,8 @@ export default function OrganizersPartners() {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-center gap-4 group"
             >
-              <div className="relative w-56 h-36 bg-white border-2 border-emerald-200 rounded-2xl shadow-lg shadow-emerald-950/5 flex items-center justify-center p-5 overflow-hidden group-hover:border-emerald-400 group-hover:shadow-xl transition-all duration-300">
-                <div className="absolute inset-0 bg-emerald-50/50 group-hover:bg-emerald-50 transition-colors duration-300" />
+              <div className="relative w-56 h-36 bg-white border-2 border-red-200 rounded-2xl shadow-lg shadow-red-950/5 flex items-center justify-center p-5 overflow-hidden group-hover:border-red-400 group-hover:shadow-xl transition-all duration-300">
+                <div className="absolute inset-0 bg-red-50/50 group-hover:bg-red-50 transition-colors duration-300" />
                 <img
                   src="/assets/images/stikes-gb.png"
                   alt="STIKES Guna Bangsa Yogyakarta"
@@ -45,10 +45,10 @@ export default function OrganizersPartners() {
                 />
               </div>
               <div className="text-center">
-                <p className="text-[10px] font-black uppercase tracking-widest text-emerald-600 mb-1">
+                <p className="text-[10px] font-black uppercase tracking-widest text-red-600 mb-1">
                   Host
                 </p>
-                <p className="text-xs font-bold text-emerald-950 leading-tight">
+                <p className="text-xs font-bold text-red-950 leading-tight">
                   STIKES Guna Bangsa Yogyakarta
                 </p>
                 <p className="text-[10px] text-slate-400 font-medium">
@@ -88,7 +88,7 @@ export default function OrganizersPartners() {
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">
                   Co-Host
                 </p>
-                <p className="text-xs font-bold text-emerald-950 leading-tight">
+                <p className="text-xs font-bold text-red-950 leading-tight">
                   Boromarajonani College of Nursing, <br />
                   Sawanpracharak Nakhon Sawan
                 </p>

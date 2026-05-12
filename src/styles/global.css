@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply text-sm selection:bg-emerald-500 selection:text-white;
+  @apply text-sm selection:bg-red-500 selection:text-white;
 }
 
 @keyframes marquee {
@@ -49,5 +49,5 @@ body {
   background: transparent;
 }
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #10b981;
+  background: #ef4444;
 }

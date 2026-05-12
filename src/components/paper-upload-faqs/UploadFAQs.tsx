@@ -31,16 +31,16 @@ export default function UploadFAQs() {
   return (
     <div className="max-w-4xl mx-auto px-6 py-24 space-y-16">
       <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
-        <MessageCircleQuestion className="w-8 h-8 text-emerald-600" />
-        <h2 className="text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+        <MessageCircleQuestion className="w-8 h-8 text-red-600" />
+        <h2 className="text-lg font-black text-red-950 tracking-tighter uppercase leading-tight">
           Frequently Asked Questions
         </h2>
       </div>
       <div className="space-y-6">
         {faqs.map((faq, idx) => (
-          <div key={idx} className="bg-white border border-slate-200 rounded-3xl p-8 hover:border-emerald-300 hover:shadow-xl transition-all group">
-            <h3 className="text-sm font-bold text-emerald-950 mb-3 flex gap-3 items-start">
-              <HelpCircle className="w-6 h-6 text-emerald-500 shrink-0 mt-0.5" />
+          <div key={idx} className="bg-white border border-slate-200 rounded-3xl p-8 hover:border-red-300 hover:shadow-xl transition-all group">
+            <h3 className="text-sm font-bold text-red-950 mb-3 flex gap-3 items-start">
+              <HelpCircle className="w-6 h-6 text-red-500 shrink-0 mt-0.5" />
               <span className="leading-tight">{faq.q}</span>
             </h3>
             <div className="pl-10">

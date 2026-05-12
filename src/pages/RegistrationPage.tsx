@@ -16,7 +16,7 @@ function NumberedArticle({
     <div className="space-y-6">
       {items.map((item, i) => (
         <div key={i} className="flex gap-5">
-          <div className="w-7 h-7 bg-emerald-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
+          <div className="w-7 h-7 bg-red-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
             {i + 1}
           </div>
           <div className="space-y-2">
@@ -44,7 +44,7 @@ export default function RegistrationPage() {
 
       <section className="relative pt-24 pb-12">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="bg-emerald-100/80 p-8 rounded-3xl border border-emerald-200">
+          <div className="bg-red-100/80 p-8 rounded-3xl border border-red-200">
             <p className="text-slate-700 leading-relaxed font-medium">
               Join us at HEALTHMED-IC 2026 and be part of a vibrant
               international academic community! We provide two modes of
@@ -55,7 +55,7 @@ export default function RegistrationPage() {
               <a
                 target="_blank"
                 href="https://drive.google.com/drive/folders/1HasEzy_fLQbXA384PPI97qH0VVXMRdck"
-                className="underline text-emerald-700"
+                className="underline text-red-700"
               >
                 link.
               </a>
@@ -68,17 +68,17 @@ export default function RegistrationPage() {
       <section className="pb-24 pt-12 bg-white border-b border-slate-100 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
+            <div className="text-red-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
               Registration Fees
             </div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">
+            <h2 className="text-xl md:text-2xl font-extrabold text-red-950 mb-4">
               Registration & Payment Information
             </h2>
           </div>
           <div className="space-y-10">
             {REGULAR_PRICING.map((section, idx) => (
               <div key={idx} className="flex flex-col gap-4">
-                <h3 className="text-sm font-bold text-emerald-900/80 mb-3 tracking-tight text-center">
+                <h3 className="text-sm font-bold text-red-900/80 mb-3 tracking-tight text-center">
                   {section.title}
                 </h3>
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
@@ -103,17 +103,17 @@ export default function RegistrationPage() {
       <section className="py-24 bg-white border-b border-slate-100 relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
+            <div className="text-red-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
               Registration Fees
             </div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">
+            <h2 className="text-xl md:text-2xl font-extrabold text-red-950 mb-4">
               Combined Registration & Publication (Scopus Proceedings)
             </h2>
           </div>
           <div className="space-y-10">
             {COMBINED_PRICING.map((section, idx) => (
               <div key={idx} className="flex flex-col gap-4">
-                <h3 className="text-sm font-bold text-emerald-900/80 mb-3 tracking-tight text-center">
+                <h3 className="text-sm font-bold text-red-900/80 mb-3 tracking-tight text-center">
                   {section.title}
                 </h3>
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto w-full">
@@ -137,17 +137,17 @@ export default function RegistrationPage() {
       <section className="py-24 bg-white relative border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-emerald-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
+            <div className="text-red-400 text-[10px] font-black uppercase tracking-[0.4em] mb-4">
               Registration Fees
             </div>
-            <h2 className="text-xl md:text-2xl font-extrabold text-emerald-950 mb-4">
+            <h2 className="text-xl md:text-2xl font-extrabold text-red-950 mb-4">
               Nusa Putra University Member (Student / Lecturer)
             </h2>
           </div>
           <div className="space-y-10">
             {NPU_PRICING.map((section, idx) => (
               <div key={idx} className="flex flex-col gap-4">
-                <h3 className="text-sm font-bold text-emerald-900/80 mb-3 tracking-tight text-center">
+                <h3 className="text-sm font-bold text-red-900/80 mb-3 tracking-tight text-center">
                   {section.title}
                 </h3>
                 <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 max-w-2xl mx-auto w-full">
@@ -170,16 +170,16 @@ export default function RegistrationPage() {
       <section className="py-24 pb-12 bg-white relative">
         <div className="max-w-7xl mx-auto px-6 space-y-10">
           <div className="flex items-center gap-4">
-            <ClipboardListIcon className="w-8 h-8 text-emerald-600" />
-            <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+            <ClipboardListIcon className="w-8 h-8 text-red-600" />
+            <h3 className="text-base md:text-lg font-black text-red-950 tracking-tighter uppercase leading-tight">
               Important Notes for Authors
             </h3>
           </div>
           <div className="grid lg:grid-cols-2 gap-4">
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
-                <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">
+                <UserIcon className="w-7 h-7 text-red-600" />
+                <h3 className="text-base md:text-lg font-extrabold text-red-950 uppercase tracking-tight">
                   For Participants
                 </h3>
               </div>
@@ -218,8 +218,8 @@ export default function RegistrationPage() {
             </article>
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
-                <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-base md:text-lg font-extrabold text-emerald-950 uppercase tracking-tight">
+                <UserIcon className="w-7 h-7 text-red-600" />
+                <h3 className="text-base md:text-lg font-extrabold text-red-950 uppercase tracking-tight">
                   For Presenters
                 </h3>
               </div>
@@ -266,16 +266,16 @@ export default function RegistrationPage() {
       <section className="py-12 bg-white border-b border-slate-100 relative">
         <div className="max-w-7xl mx-auto px-6 space-y-10">
           <div className="flex items-center gap-4">
-            <ClipboardListIcon className="w-8 h-8 text-emerald-600" />
-            <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+            <ClipboardListIcon className="w-8 h-8 text-red-600" />
+            <h3 className="text-base md:text-lg font-black text-red-950 tracking-tighter uppercase leading-tight">
               Registrations Benefits
             </h3>
           </div>
           <div className="grid lg:grid-cols-2 gap-4">
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
-                <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-sm font-extrabold text-emerald-950 uppercase tracking-tight">
+                <UserIcon className="w-7 h-7 text-red-600" />
+                <h3 className="text-sm font-extrabold text-red-950 uppercase tracking-tight">
                   For onsite participants
                 </h3>
               </div>
@@ -292,8 +292,8 @@ export default function RegistrationPage() {
             </article>
             <article className="flex flex-col gap-8 p-10 bg-slate-100 border border-slate-200 rounded-[2.5rem]">
               <div className="flex items-center gap-4 mb-4">
-                <UserIcon className="w-7 h-7 text-emerald-600" />
-                <h3 className="text-sm font-extrabold text-emerald-950 uppercase tracking-tight">
+                <UserIcon className="w-7 h-7 text-red-600" />
+                <h3 className="text-sm font-extrabold text-red-950 uppercase tracking-tight">
                   For online participants
                 </h3>
               </div>
@@ -313,8 +313,8 @@ export default function RegistrationPage() {
       <section className="pt-12 pb-24">
         <div className="max-w-7xl mx-auto px-6 space-y-10">
           <div className="flex items-center gap-4">
-            <AlertTriangleIcon className="w-8 h-8 text-emerald-600" />
-            <h3 className="text-base md:text-lg font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+            <AlertTriangleIcon className="w-8 h-8 text-red-600" />
+            <h3 className="text-base md:text-lg font-black text-red-950 tracking-tighter uppercase leading-tight">
               Important Notes
             </h3>
           </div>

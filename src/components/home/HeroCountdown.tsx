@@ -33,7 +33,7 @@ export default function HeroCountdown() {
             <React.Fragment key={i}>
               <div className="text-center">
                 <div className="text-xl md:text-3xl font-black text-white">{String(t.val).padStart(2, '0')}</div>
-                <div className="text-[10px] text-emerald-500 font-bold tracking-widest uppercase">{t.label}</div>
+                <div className="text-[10px] text-red-500 font-bold tracking-widest uppercase">{t.label}</div>
               </div>
               {i < 3 && <div className="text-xl md:text-4xl font-light text-white/20 mt-[-16px]">:</div>}
             </React.Fragment>

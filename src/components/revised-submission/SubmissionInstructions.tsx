@@ -5,7 +5,7 @@ function NumberedSteps({ items }: { items: string[] }) {
     <div className="space-y-4">
       {items.map((text, i) => (
         <div key={i} className="flex gap-5">
-          <div className="w-7 h-7 bg-emerald-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
+          <div className="w-7 h-7 bg-red-500 rounded text-xs font-black text-white shrink-0 flex items-center justify-center">
             {i + 1}
           </div>
           <p className="text-slate-600 leading-relaxed font-medium">{text}</p>
@@ -20,12 +20,12 @@ export default function RevisedSubmissionInstructions() {
     <div className="max-w-7xl mx-auto px-6 py-24 space-y-10">
       <section className="space-y-8">
         <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
-          <FileCode className="w-8 h-8 text-emerald-600" />
-          <h2 className="text-base md:text-lg lg:text-xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+          <FileCode className="w-8 h-8 text-red-600" />
+          <h2 className="text-base md:text-lg lg:text-xl font-black text-red-950 tracking-tighter uppercase leading-tight">
             Revised Submission Instructions
           </h2>
         </div>
-        <div className="bg-emerald-100/80 p-8 rounded-3xl border border-emerald-200">
+        <div className="bg-red-100/80 p-8 rounded-3xl border border-red-200">
           <p className="text-slate-700 leading-relaxed font-medium">
             All manuscripts identified as requiring revision will undergo a subsequent review process. Authors are expected
             to prepare a clean <strong>Revised Manuscript</strong> and a separate <strong>Response to Reviewers</strong> document,
@@ -36,8 +36,8 @@ export default function RevisedSubmissionInstructions() {
 
       <section className="space-y-12">
         <div className="flex items-center gap-4 border-b border-slate-100 pb-8">
-          <FileCode className="w-8 h-8 text-emerald-600" />
-          <h3 className="text-xl lg:text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+          <FileCode className="w-8 h-8 text-red-600" />
+          <h3 className="text-xl lg:text-2xl font-black text-red-950 tracking-tighter uppercase leading-tight">
             Preparing the Revised Manuscript
           </h3>
         </div>
@@ -54,8 +54,8 @@ export default function RevisedSubmissionInstructions() {
 
       <div className="space-y-10">
         <div className="flex items-center gap-4">
-          <FileCode className="w-6 h-6 text-emerald-600" />
-          <h3 className="text-xl lg:text-2xl font-black text-emerald-950 tracking-tighter uppercase leading-tight">
+          <FileCode className="w-6 h-6 text-red-600" />
+          <h3 className="text-xl lg:text-2xl font-black text-red-950 tracking-tighter uppercase leading-tight">
             Template Resources
           </h3>
         </div>
@@ -67,13 +67,13 @@ export default function RevisedSubmissionInstructions() {
             <a
               key={tmpl.title}
               href="#"
-              className="flex items-center justify-between p-8 bg-white border border-slate-200 rounded-3xl hover:border-emerald-500 hover:shadow-xl transition-all group"
+              className="flex items-center justify-between p-8 bg-white border border-slate-200 rounded-3xl hover:border-red-500 hover:shadow-xl transition-all group"
             >
               <div>
-                <h4 className="font-bold text-emerald-950 mb-1">{tmpl.title}</h4>
+                <h4 className="font-bold text-red-950 mb-1">{tmpl.title}</h4>
                 <p className="text-xs text-slate-400">{tmpl.subtitle}</p>
               </div>
-              <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-300 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+              <div className="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-300 group-hover:bg-red-500 group-hover:text-white transition-all">
                 <Download className="w-5 h-5" />
               </div>
             </a>
@@ -84,7 +84,7 @@ export default function RevisedSubmissionInstructions() {
             <ShieldCheck className="w-48 h-48" />
           </div>
           <div className="relative z-10">
-            <h4 className="text-emerald-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">Submission Ethics</h4>
+            <h4 className="text-red-500 text-[10px] font-black uppercase tracking-[0.3em] mb-4">Submission Ethics</h4>
             <p className="text-base font-bold mb-4 leading-tight max-w-2xl">
               Double-blind peer review is mandatory for all tracks.
             </p>
